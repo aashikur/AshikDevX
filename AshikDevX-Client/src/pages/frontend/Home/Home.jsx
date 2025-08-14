@@ -5,6 +5,11 @@ import AboutGrid from './sections/AboutGrid';
 import Marque from './sections/Marque';
 import MyStory from '../About/sections/MyStory';
 import FeaturedProjects from '../About/sections/FeaturedProjects';
+import BlogPreviewSection from './sections/BlogPreviewSection';
+import CTAGetInTouch from './sections/CTAGetInTouch';
+import PricingSection from './sections/PricingSection';
+import TestimonialsSection from './sections/TestimonialsSection';
+import WhatsAppCTA from './sections/WhatsAppCTA';
 
 const Home = () => {
     return (
@@ -29,8 +34,20 @@ const Home = () => {
                 <FeaturedProjects/>
             </div>
             {/* <AboutGrid></AboutGrid> */}
-            <Marque></Marque>
-            <HeroSection></HeroSection>
+            <div>
+              <Marque></Marque>
+            </div>
+           <div>
+             <HeroSection></HeroSection>
+           </div>
+           <div>
+            <AboutGrid></AboutGrid>
+            <BlogPreviewSection/>
+            <CTAGetInTouch></CTAGetInTouch>
+            <PricingSection></PricingSection>
+            <TestimonialsSection></TestimonialsSection>
+            <WhatsAppCTA></WhatsAppCTA>
+           </div>
         </div>
     );
 };
