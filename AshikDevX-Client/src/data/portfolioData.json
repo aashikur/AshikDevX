@@ -1,0 +1,96 @@
+{
+  "personalInfo": {
+    "fullName": "Ashikur Rahaman",
+    "title": "Web Developer | Full-Stack Developer | WordPress Expert",
+    "location": "Dhaka, Bangladesh",
+    "email": "your.email@example.com",
+    "phone": "+8801XXXXXXXXX",
+    "website": "https://your-website.com",
+    "linkedin": "https://linkedin.com/in/ashikur-rahaman",
+    "github": "https://github.com/yourusername",
+    "instagram": "https://instagram.com/BetterMe",
+    "youtube": "https://youtube.com/@RehmanAshik"
+  },
+  "aboutMe": "I’m a passionate full-stack web developer with expertise in creating clean, responsive, and high-performance web solutions. Skilled in React, Tailwind CSS, Node.js, Express, MongoDB, and WordPress, I combine creativity with functionality. I’m also a content creator and entrepreneur, aiming to build a service-based business in web development and video editing. I value trust, quality, and user-focused design in all my work.",
+  "skills": {
+    "frontend": [
+      "HTML5",
+      "CSS3",
+      "JavaScript (ES6+)",
+      "React.js",
+      "Tailwind CSS",
+      "Responsive Design",
+      "UI/UX Best Practices"
+    ],
+    "backend": [
+      "Node.js",
+      "Express.js",
+      "RESTful API Development",
+      "MongoDB",
+      "Mongoose",
+      "Authentication & Authorization"
+    ],
+    "cmsTools": [
+      "WordPress (Theme & Plugin Customization)",
+      "Git & GitHub",
+      "XAMPP / Local Development",
+      "Video Editing (Premiere Pro, CapCut)"
+    ]
+  },
+  "services": [
+    "Custom Website Development",
+    "Full-Stack Web Applications",
+    "WordPress Development",
+    "UI/UX Implementation",
+    "Video Editing for Businesses & Creators"
+  ],
+  "projects": [
+    {
+      "name": "Portfolio Website – Sung Jin-Woo (Solo Leveling)",
+      "tech": ["React", "Tailwind CSS"],
+      "description": "Anime-inspired personal portfolio site with interactive UI and reusable components."
+    },
+    {
+      "name": "E-Commerce Platform",
+      "tech": ["React", "Node.js", "MongoDB", "Express", "Tailwind CSS"],
+      "description": "Full-stack e-commerce app with cart, payment gateway, and admin panel."
+    },
+    {
+      "name": "Custom WordPress Website for Local Business",
+      "tech": ["WordPress", "Elementor", "PHP"],
+      "description": "Fully customized, SEO-optimized website for a small business."
+    },
+    {
+      "name": "JavaScript Learning Journey (21 Days)",
+      "tech": ["JavaScript", "DOM Manipulation"],
+      "description": "Documented learning progress with coding examples and mini-projects."
+    }
+  ],
+  "education": [
+    {
+      "degree": "B.Sc. in Your Field",
+      "institution": "Your University Name",
+      "year": "Start Year – Present"
+    }
+  ],
+  "certifications": [
+    "JavaScript Basics – Platform Name",
+    "React.js Fundamentals – Platform Name",
+    "WordPress Development – Platform Name"
+  ],
+  "achievements": [
+    "Completed 60-Day Workout Challenge alongside full-time work and coding.",
+    "Built personal brand 'BetterMe' on Instagram to inspire fitness and self-improvement.",
+    "Organized orientation program for programming club Batch 15."
+  ],
+  "hobbies": [
+    "Calisthenics & Fitness Challenges",
+    "Content Creation & Editing",
+    "Reading Tech Blogs",
+    "Spiritual Growth & Learning"
+  ],
+  "languages": [
+    "Bengali (Native)",
+    "English (Fluent)"
+  ]
+}

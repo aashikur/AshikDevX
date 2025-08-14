@@ -112,3 +112,118 @@ npm install
 
 # Start the development server
 npm run dev
+
+## Directory Structure
+src/
+│
+├── assets/                      # Static files
+│   ├── images/                  # All images (logos, project thumbnails, banners)
+│   ├── icons/                   # SVG or icon sets
+│   └── fonts/                   # Custom fonts (if any)
+│
+├── components/                  # Reusable React components
+│   ├── common/                  # Common UI components used everywhere
+│   │   ├── Button.jsx
+│   │   ├── Card.jsx
+│   │   ├── CTA.jsx
+│   │   ├── Input.jsx
+│   │   ├── Modal.jsx
+│   │   ├── Navbar.jsx
+│   │   ├── Footer.jsx
+│   │   └── Marquee.jsx
+│   │
+│   ├── frontend/                # Components exclusive to frontend pages
+│   │   ├── HeroSection.jsx
+│   │   ├── TestimonialCard.jsx
+│   │   ├── ProjectCard.jsx
+│   │   ├── PricingCard.jsx
+│   │   └── WhatsAppCTA.jsx
+│   │
+│   └── dashboard/               # Components exclusive to dashboard/admin
+│       ├── Sidebar.jsx
+│       ├── UserTable.jsx
+│       ├── StatsCard.jsx
+│       └── Notification.jsx
+│
+├── context/                     # React Context Providers
+│   ├── AuthContext.jsx
+│   ├── ThemeContext.jsx
+│   └── NotificationContext.jsx
+│
+├── hooks/                       # Custom React hooks
+│   ├── useAuth.js
+│   ├── useTheme.js
+│   ├── useFetch.js
+│   └── useDebounce.js
+│
+├── layouts/                     # Layout components wrapping pages
+│   ├── FrontendLayout.jsx       # Header + Footer wrapper for frontend
+│   └── DashboardLayout.jsx      # Sidebar + Header wrapper for dashboard
+│
+├── pages/                       # Page components grouped by frontend/dashboard
+│   ├── frontend/
+│   │   ├── Home/
+│   │   │   ├── Home.jsx
+│   │   │   └── sections/          # Smaller section components for Home page
+│   │   │       ├── HeroSection.jsx
+│   │   │       ├── AboutMeSection.jsx
+│   │   │       ├── HowIWorkSection.jsx
+│   │   │       ├── FeaturedProjectsSection.jsx
+│   │   │       ├── PricingSection.jsx
+│   │   │       ├── TestimonialsSection.jsx
+│   │   │       ├── BlogPreviewSection.jsx
+│   │   │       ├── CTAGetInTouch.jsx
+│   │   │       └── WhatsAppCTA.jsx
+│   │   │
+│   │   ├── About/
+│   │   │   ├── About.jsx
+│   │   │   └── sections/
+│   │   │       ├── MyStory.jsx
+│   │   │       ├── SocialLinks.jsx
+│   │   │       ├── ExperienceTimeline.jsx
+│   │   │       ├── YouTubeShorts.jsx
+│   │   │       ├── TechStack.jsx
+│   │   │       ├── FeaturedProjects.jsx
+│   │   │       └── LetsWorkTogether.jsx
+│   │   │
+│   │   ├── Portfolio/
+│   │   │   ├── Portfolio.jsx
+│   │   │   └── PortfolioGrid.jsx
+│   │   │
+│   │   ├── Services/
+│   │   │   ├── Services.jsx
+│   │   │   ├── ServiceMegaMenu.jsx
+│   │   │   └── ServiceBreakdowns.jsx
+│   │   │
+│   │   ├── Blog/
+│   │   │   ├── Blog.jsx
+│   │   │   └── BlogCard.jsx
+│   │   │
+│   │   └── Reviews/
+│   │       ├── Reviews.jsx
+│   │       └── LetsWorkTogether.jsx
+│   │
+│   └── dashboard/
+│       ├── Overview/
+│       │   └── Overview.jsx
+│       ├── ManageUsers/
+│       │   ├── UsersList.jsx
+│       │   └── UserDetails.jsx
+│       ├── Analytics/
+│       │   └── DashboardStats.jsx
+│       └── Settings/
+│           └── Settings.jsx
+│
+├── styles/                     # Global styles & Tailwind config
+│   ├── globals.css
+│   ├── tailwind.config.js
+│   └── custom.css
+│
+├── utils/                      # Utility/helper functions
+│   ├── api.js                  # API helper calls
+│   ├── formatDate.js
+│   ├── validations.js
+│   └── constants.js
+│
+├── App.jsx                    # Main app component with routing
+└── index.jsx                  # ReactDOM render entry point
