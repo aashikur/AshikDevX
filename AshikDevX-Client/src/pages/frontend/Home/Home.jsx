@@ -29,8 +29,8 @@ const Home = () => {
                 <FeaturedProjects/>
             </div>
             {/* <AboutGrid></AboutGrid> */}
-            {/* <Marque></Marque> */}
-            {/* <HeroSection></HeroSection> */}
+            <Marque></Marque>
+            <HeroSection></HeroSection>
         </div>
     );
 };
