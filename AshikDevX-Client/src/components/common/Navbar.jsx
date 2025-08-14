@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Home, User, FolderGit2, Code2, Mail, Menu, X } from 'lucide-react';
+import ToggleLightDark from '../../00--ReUse/ToggleLightDark';
 
 const menuItems = [
   {
@@ -85,6 +86,7 @@ export default function PortfolioNavbar() {
   return (
     <div className='fixed w-full top-0 left-0 z-50 bg-black/90 backdrop-blur-sm py-3'>
       <div className='flex justify-between max-w-[1400px] mx-auto items-center p-2'>
+      <div className="absolute right-0 "><ToggleLightDark/></div>
 
         {/* Logo */}
         <div className='px-2 flex items-center gap-2'>
