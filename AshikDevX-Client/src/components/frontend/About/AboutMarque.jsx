@@ -3,7 +3,7 @@
 import MyBadge from "@/components/ui/MyBadge";
 import React, { useRef, useEffect, useCallback, useMemo } from "react";
 import Marquee from "react-fast-marquee";
-
+import MarqueData from "@/data/MarqueData";
 const FallingGlitch = ({
     glitchColors = ["#ff7cce", "#7cf0ff", "#fcf07c", "#8E44AD", "#3498DB"],
     fontSize = 14,
@@ -123,8 +123,10 @@ const FallingGlitch = ({
     </div>;
 };
 
-
+console.log(MarqueData)
 export default function AboutMarque() {
+
+    
     return <div className="relative w-full h-full overflow-hidden">
 
         <FallingGlitch
@@ -140,16 +142,26 @@ export default function AboutMarque() {
             <div className="flex z-10 flex-col items-center py-10   justify-between w-full h-full">
 
                 <div className=" p-1">
-                    <h1 className="text-2xl text-center font-bold
-                    bg-gradient-to-b from-sky-300 via-purple-300 to-pink-300 bg-clip-text text-transparent
-                    
+                    <h1 className="text-2xl text-center font-bold                    
                     ">Passionate About Cutting- edge technologies</h1>
                 </div>
                 <div className="p-1">
+                   
+                    {/* <Marquee
+                        // autoFill={true}
+                        className="flex items-center justify-center"
+                        >
+                        {
+                            MarqueData.map((item, index) => (
+                              <MyBadge key={index} text={item.iconKey} iconKey={item.icon} display="2" />
+                            ))
+                        }
+                    </Marquee> */}
                     <MyBadge text="React" iconKey={"react"} display="2" />
                 </div>
 
-                <div className="border p-1"> d</div>
+                <div className="p-1"> </div>
+                <div className="p-1"> </div>
             </div>
 
         </FallingGlitch>

@@ -4,7 +4,7 @@
     "title": "AuctionG",
     "indicatorColor": "pink-500",
     "description": "AuctionG is an online auction platform where users can list, bid, and purchase items in real time. It supports live bid updates, secure payments, and seller verification to ensure trust between buyers and sellers.",
-    "image": "src/assets/1.jpg",
+    "image": "/assets/images/1.jpg",
     "features": [
       { "iconKey": "star-pink", "text": "Real-time bidding system with WebSocket support." },
       { "iconKey": "star-pink", "text": "Secure payment integration using Stripe API." },
@@ -28,7 +28,7 @@
     "title": "TaskMaster",
     "indicatorColor": "blue-500",
     "description": "TaskMaster is a collaborative task management app designed for teams and individuals. It helps users create tasks, assign them to team members, set deadlines, and track progress in real time.",
-    "image": "src/assets/2.jpg",
+    "image": "assets/images/2.jpg",
     "features": [
       { "iconKey": "star-blue", "text": "Create, assign, and track tasks with priority levels." },
       { "iconKey": "star-blue", "text": "Built-in Kanban board for visual workflow management." },
@@ -51,7 +51,7 @@
     "title": "AuctionG",
     "indicatorColor": "pink-500",
     "description": "AuctionG is an online auction platform where users can list, bid, and purchase items in real time. It supports live bid updates, secure payments, and seller verification to ensure trust between buyers and sellers.",
-    "image": "src/assets/1.jpg",
+    "image": "/assets/images/1.jpg",
     "features": [
       { "iconKey": "star-pink", "text": "Real-time bidding system with WebSocket support." },
       { "iconKey": "star-pink", "text": "Secure payment integration using Stripe API." },
@@ -75,7 +75,7 @@
     "title": "TaskMaster",
     "indicatorColor": "blue-500",
     "description": "TaskMaster is a collaborative task management app designed for teams and individuals. It helps users create tasks, assign them to team members, set deadlines, and track progress in real time.",
-    "image": "src/assets/2.jpg",
+    "image": "assets/images/2.jpg",
     "features": [
       { "iconKey": "star-blue", "text": "Create, assign, and track tasks with priority levels." },
       { "iconKey": "star-blue", "text": "Built-in Kanban board for visual workflow management." },

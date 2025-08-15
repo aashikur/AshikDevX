@@ -72,7 +72,7 @@ export default function BentoGridCom() {
       cta: "Learn More",
       href: "#",
       className: "md:col-span-2", // Large screens: spans 2 columns
-      background: <div className="absolute inset-0 " >
+      background: <div className="absolute inset-0 group " >
         <div className="flex justify-center items-center h-full">
           {/* X Organizations Black Background with Top Glow */}
           <div
@@ -81,7 +81,9 @@ export default function BentoGridCom() {
               background: "radial-gradient(ellipse 80% 60% at 50% 0%, rgba(120, 180, 255, 0.25), transparent 70%), #000000",
             }}
           />
-          <img className="w-40 z-10 bg-white/10 border border-white/15 p-1.5  rounded-full " src="/public/assets/hero3.jpg" alt="" />
+          <img className="w-40 translate-y-2 z-10 bg-white/10 border border-white/15 p-1.5  rounded-full " 
+          
+          src="public/assets/images/hero3.jpg" alt="" />
         </div>
       </div>,
     },

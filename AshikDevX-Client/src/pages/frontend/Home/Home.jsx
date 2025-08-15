@@ -1,6 +1,6 @@
 import React from 'react';
 import HeroSection from './sections/HeroSection';
-import AboutMeSection from './sections/AboutMeSection';
+import AboutMeSection from './sections/HeroSection2';
 import AboutGrid from './sections/AboutGrid';
 import Marque from './sections/Marque';
 import MyStory from '@/pages/frontend/About/sections/MyStory';
@@ -34,9 +34,9 @@ const Home = () => {
                 <FeaturedProjects/>
             </div>
             {/* <AboutGrid></AboutGrid> */}
-            <div>
+            {/* <div>
               <Marque></Marque>
-            </div>
+            </div> */}
            {/* <div> <HeroSection></HeroSection>  </div> */}
            <div>
             <AboutGrid></AboutGrid>

@@ -52,7 +52,7 @@ const FeaturedProjects = () => {
 
   return (
     // Main container
-    <div className='max-w-[1400px] mx-auto p-8 relative'>
+    <div className='max-w-[1400px] mx-auto md:p-8 relative'>
       {/* Section title component */}
       <SectionTitle></SectionTitle>
 
@@ -61,20 +61,20 @@ const FeaturedProjects = () => {
         projectsData?.map((project, index) => <div key={index}>
           <div
             style={{ top: `${100 + index * 50}px` }} // Offset each div by 50px vertically
-            className={`flex my-10 stickyDiv group sticky outfit-main cursor-pointer`} // Styling classes
+            className={`flex flex-col md:flex-row  my-10 stickyDiv group sticky outfit-main cursor-pointer`} // Styling classes
           >
             {/* Left side: project image and gradient background */}
-            <div className="w-2/3 pr-10">
+            <div className="w-full md:w-2/3 md:pr-10">
               <div className='bg-gray-100/10 backdrop-blur-2xl border border-white/10 p-1.5 rounded-2xl'>
                 <div
-                  className='rounded-2xl p-10'
+                  className='rounded-2xl md:p-10'
                   style={{
                     // Radial gradient overlay on black background
                     background: "radial-gradient(ellipse 80% 60% at 50% 0%, rgba(139, 92, 246, 0.25), transparent 70%), #000000",
                   }}
                 >
                   {/* Project description header */}
-                  <div className='flex items-center justify-between mb-8'>
+                  <div className='md:flex items-center justify-between mb-8 hidden'>
                     <h1 className='text-xl font-semibold opacity-60 bg-gradient-to-r from-gray-300 via-purple-300 to-pink-300 bg-clip-text text-transparent'>
                       {project.description.slice(0, 120)} {/* Show first 120 chars */}
                     </h1>
@@ -97,20 +97,19 @@ const FeaturedProjects = () => {
             </div>
 
             {/* Right side: project title, description, features, badges */}
-            <div className={`w-1/3 flex flex-col justify-center  rounded-2xl z-${index} bg-black backdrop-blur-2xl`}>
+            <div className={`md:w-1/3 flex flex-col justify-center  rounded-2xl z-${index} bg-black backdrop-blur-2xl`}>
               {/* Project title with indicator dot */}
-              <div className="flex items-center gap-2">
-                <span className='w-5 mt-1 h-1 bg-pink-500 rounded-full'></span>
+              <div className="flex items-center gap-2 mt-5">
+                <span className='w-5 mt-1 h-1 bg-pink-500 rounded-full hidden'></span>
                 <h1 className='text-2xl font-semibold'>{project.title}</h1>
               </div>
 
               {/* Project description and features */}
-              <div className='p-6'>
-                <p className='text-[#a1a1a1] text-base '>{project.description}</p>
-                <br />
+              <div className='p-2  md:p-6'>
+                <p className='text-[#a1a1a1]  text-sm md:text-base  '>{project.description}</p>
 
                 {/* Features list */}
-                <ul className='text-sm'>
+                <ul className='text-sm hidden md:block'>
                   {project.features.map((feature, index) =>
                     <li key={index} className='flex gap-3 items-center mb-2'>
                       <GiPolarStar className='w-5 h-5 text-pink-500' /> {/* Star icon */}
@@ -125,7 +124,7 @@ const FeaturedProjects = () => {
                 <div className='flex flex-wrap gap-2 justify-start'>
                   {/* Map badges from project data */}
                   {project.badges.map((badge, index) =>
-                    <MyBadge key={index} iconKey={badge.iconKey} text={badge.text} />
+                    <MyBadge iconKey={badge.iconKey} key={index}  text={badge.text} />
                     
                   )}
                   {/* Example: static badge */}

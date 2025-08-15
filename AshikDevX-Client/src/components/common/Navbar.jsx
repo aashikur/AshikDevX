@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { Home, User, FolderGit2, Code2, Mail, Menu, X } from 'lucide-react';
-import ToggleLightDark from '../../00--ReUse/ToggleLightDark';
+import ToggleLightDark from '../../reuse/ToggleLightDark';
 import { CgMenuMotion } from "react-icons/cg";
 
 const menuItems = [
@@ -115,10 +115,10 @@ export default function PortfolioNavbar() {
         <div className='px-2 flex items-center gap-2'>
           <img width={40} className='rounded-full' src="https://avatars.githubusercontent.com/u/46211523?v=4" alt="" />
           <div className='inter-main'>
-            <p className='font-bold text-[20px] bg-gradient-to-r from-blue-600 to-purple-600 dark:from-blue-400 dark:to-purple-400 bg-clip-text text-transparent'>
+            <p className='font-bold text-lg'>
               Ashikur Rahaman
             </p>
-            <p className='text-xs opacity-80 text-[12px]'>MERN Stack Developer</p>
+            <p className='text-xs text-gray-400 outfit-main text-[10px]'>MERN STACK DEVELOPER</p>
           </div>
         </div>
 

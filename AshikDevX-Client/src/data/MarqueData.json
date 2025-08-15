@@ -1,0 +1,25 @@
+[
+  { "icon": "react", "iconKey": "ReactJS" },
+  { "icon": "nextjs", "iconKey": "Next.js" },
+  { "icon": "html", "iconKey": "HTML5" },
+  { "icon": "css", "iconKey": "CSS3" },
+  { "icon": "javascript", "iconKey": "JavaScript" },
+  { "icon": "tailwind", "iconKey": "TailwindCSS" },
+  { "icon": "bootstrap", "iconKey": "Bootstrap" },
+  { "icon": "redux", "iconKey": "Redux" },
+  { "icon": "figma", "iconKey": "Figma" },
+
+  { "icon": "node", "iconKey": "Node.js" },
+  { "icon": "express", "iconKey": "Express.js" },
+  { "icon": "mongodb", "iconKey": "MongoDB" },
+  { "icon": "python", "iconKey": "Python" },
+
+  { "icon": "git", "iconKey": "Git" },
+  { "icon": "github", "iconKey": "GitHub" },
+  { "icon": "docker", "iconKey": "Docker" },
+  { "icon": "postman", "iconKey": "Postman" },
+
+  { "icon": "plus", "iconKey": "Plus" },
+  { "icon": "star", "iconKey": "Polar Star" },
+  { "icon": "crystal", "iconKey": "Crystal Ball" }
+]

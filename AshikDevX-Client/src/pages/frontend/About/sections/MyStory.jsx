@@ -30,12 +30,12 @@ export default function MyStory() {
                     Currently, I'm in the process of completing my BSc in Computer Science Engineering. This academic journey has allowed me to constantly push my limits and broaden my knowledge in the dynamic field of IT technology. Alongside my studies, I nurture a keen interest in competitive programming, which fuels my drive to continuously learn and master new technologies.
                     {/* <span className="font-medium text-gray-800 dark:text-gray-200"> Sera UI</span>. */}
                 </p>
-                {/* <div className="flex flex-wrap gap-3 mb-10">
+                <div className="flex flex-wrap gap-3 mb-10">
               <a href="#" className="btn btn-dark px-5 py-2.5 rounded-lg text-sm font-medium bg-slate-900 dark:bg-slate-100 text-white dark:text-black border border-slate-200 dark:border-slate-700 transition-colors hover:bg-slate-800 dark:hover:bg-slate-200">View Projects</a>
               <a href="#" className="btn btn-light px-5 py-2.5 text-sm font-medium text-gray-900 dark:text-white flex items-center gap-2 border border-slate-200 dark:border-slate-700 rounded-lg transition-colors hover:bg-slate-900 hover:text-white dark:hover:bg-slate-100 dark:hover:text-black">
                 Contact Me <ArrowRightIcon />
               </a>
-            </div> */}
+            </div>
                 <div className="flex items-center gap-4">
                     <p className="text-sm text-gray-500 dark:text-gray-400">Connect:</p>
                     <div className="flex gap-3">
@@ -52,10 +52,10 @@ export default function MyStory() {
                 </div>
             </div>
             { }
-            <div className="md:w-1/3 flex items-center justify-center">
+            <div className="md:w-1/3 hidden  sm:flex items-center justify-center ">
                 <div className="relative">
                     <div className="bg-gray-200 dark:bg-gray-800 border-2 border-dashed border-gray-300 dark:border-gray-700 rounded-full w-40 h-40 md:w-48 md:h-48 flex items-center justify-center overflow-hidden">
-                        <img src="https://aashikur.github.io/img/hero3.jpg" alt="Profile" className="w-full h-full object-cover" onError={e => {
+                        <img src="/assets/images/hero3.jpg" alt="Profile" className="w-full h-full object-cover" onError={e => {
                             const target = e.target;
                             target.onerror = null;
                             target.src = 'https://placehold.co/192x192/e2e8f0/475569?text=Image';
