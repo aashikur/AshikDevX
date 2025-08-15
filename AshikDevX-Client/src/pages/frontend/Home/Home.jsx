@@ -3,7 +3,7 @@ import HeroSection from './sections/HeroSection';
 import AboutMeSection from './sections/AboutMeSection';
 import AboutGrid from './sections/AboutGrid';
 import Marque from './sections/Marque';
-import MyStory from '../About/sections/MyStory';
+import MyStory from '@/pages/frontend/About/sections/MyStory';
 import FeaturedProjects from '../About/sections/FeaturedProjects';
 import BlogPreviewSection from './sections/BlogPreviewSection';
 import CTAGetInTouch from './sections/CTAGetInTouch';

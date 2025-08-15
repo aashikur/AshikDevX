@@ -3,7 +3,9 @@ import React from 'react';
 const FeaturedProjectsSection = () => {
     return (
         <div>
-            Features Projects
+           <div>
+            hello
+           </div>
         </div>
     );
 };
