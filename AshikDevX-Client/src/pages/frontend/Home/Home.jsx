@@ -37,9 +37,7 @@ const Home = () => {
             <div>
               <Marque></Marque>
             </div>
-           <div>
-             <HeroSection></HeroSection>
-           </div>
+           {/* <div> <HeroSection></HeroSection>  </div> */}
            <div>
             <AboutGrid></AboutGrid>
 
