@@ -122,13 +122,11 @@ const FallingGlitch = ({
         </div>
     </div>;
 };
+
+
 export default function AboutMarque() {
     return <div className="relative w-full h-full overflow-hidden">
-        <style>
-            {`
-         @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
-        `}
-        </style>
+
         <FallingGlitch
 
         >
@@ -147,20 +145,8 @@ export default function AboutMarque() {
                     
                     ">Passionate About Cutting- edge technologies</h1>
                 </div>
-                <div className="border p-1">
-                       <MyBadge text="My works" />
-                    
-                    <Marquee
-                     autoFill={true}
-                        speed={100}
-                        // gradient={false}
-                        // gradientColor={[255, 255, 255]}
-                        // pauseOnHover={true}
-                    >
-
-                        <div >Two</div> {' . '}
-                        <div >Three</div> {' . '}
-                    </Marquee>
+                <div className="p-1">
+                    <MyBadge text="React" iconKey={"react"} display="2" />
                 </div>
 
                 <div className="border p-1"> d</div>

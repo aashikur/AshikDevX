@@ -1,9 +1,10 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { Home, User, FolderGit2, Code2, Mail, Menu, X } from 'lucide-react';
 import ToggleLightDark from '../../00--ReUse/ToggleLightDark';
+import { CgMenuMotion } from "react-icons/cg";
 
 const menuItems = [
   {
@@ -83,10 +84,32 @@ const sharedTransition = {
 export default function PortfolioNavbar() {
   const [isOpen, setIsOpen] = useState(false);
 
+  // Scroll Animation Add to manu 
+  const [isScrolled, setIsScrolled] = useState(false);
+  useEffect(() => {
+    let lastScrollY = window.scrollY;
+    const handleScroll = () => {
+
+      if (window.scrollY > lastScrollY) {
+        // Scrolling Down
+        setIsScrolled(true);
+      } else {
+        // Scrolling Up
+        setIsScrolled(false);
+      }
+      lastScrollY = window.scrollY;
+      console.log(isScrolled, lastScrollY, window.scrollY);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [])
+
+
+
   return (
-    <div className='fixed w-full top-0 left-0 z-50 bg-black/90 backdrop-blur-sm py-3'>
+    <div className={`${isScrolled ? "-translate-y-30 " : "translate-y-0"} border-gray-900 transition-all duration-500 fixed w-full top-0 left-0 z-50 bg-black/40  backdrop-blur-2xl py-3`}>
       <div className='flex justify-between max-w-[1400px] mx-auto items-center p-2'>
-      <div className="absolute right-0 "><ToggleLightDark/></div>
+        <div className="absolute right-0 hidden "><ToggleLightDark /></div>
 
         {/* Logo */}
         <div className='px-2 flex items-center gap-2'>
@@ -160,9 +183,9 @@ export default function PortfolioNavbar() {
         {/* Mobile Menu Button */}
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden p-2 rounded-lg bg-white/60 dark:bg-black/60 border border-gray-200/80 dark:border-gray-800/80 shadow-lg"
+          className="md:hidden p-3  bg-white/60 dark:bg-black/60 border border-gray-200/80 dark:border-gray-800/80 shadow-lg rounded-full"
         >
-          {isOpen ? <X size={22} /> : <Menu size={22} />}
+          {isOpen ? <X size={22} /> : <CgMenuMotion size={24} />}
         </button>
       </div>
 

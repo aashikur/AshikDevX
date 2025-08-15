@@ -43,12 +43,12 @@ const FeaturedProjects = () => {
   }, []);
 
   // Debugging logs
-  console.log("Current scrollTop:", scrollTop);
-  if (projectsData) {
-    console.log('Projects data loaded:', projectsData);
-  } else {
-    console.log('No projects data found');
-  }
+//   console.log("Current scrollTop:", scrollTop);
+//   if (projectsData) {
+//     console.log('Projects data loaded:', projectsData);
+//   } else {
+//     console.log('No projects data found');
+//   }
 
   return (
     // Main container
@@ -58,9 +58,8 @@ const FeaturedProjects = () => {
 
       {/* Map over projects data and display each project */}
       {
-        projectsData?.map((project, index) => <>
+        projectsData?.map((project, index) => <div key={index}>
           <div
-            key={index} // Unique key for React
             style={{ top: `${100 + index * 50}px` }} // Offset each div by 50px vertically
             className={`flex my-10 stickyDiv group sticky outfit-main cursor-pointer`} // Styling classes
           >
@@ -127,6 +126,7 @@ const FeaturedProjects = () => {
                   {/* Map badges from project data */}
                   {project.badges.map((badge, index) =>
                     <MyBadge key={index} iconKey={badge.iconKey} text={badge.text} />
+                    
                   )}
                   {/* Example: static badge */}
                   {/* <MyBadge iconKey="redux" text="Redux" /> */}
@@ -135,7 +135,7 @@ const FeaturedProjects = () => {
             </div>
 
           </div>
-        </>)
+        </div>)
       }
     </div>
   );
