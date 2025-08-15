@@ -1,5 +1,5 @@
 import SectionTitle from '@/components/ui/SectionTitle';
-import { Plus } from 'lucide-react';
+import { MoveRight, Plus } from 'lucide-react';
 import { GiPolarStar } from "react-icons/gi";
 import { FaReact } from "react-icons/fa";
 
@@ -37,7 +37,7 @@ const FeaturedProjects = () => {
                 projectsData?.map((project, index) => <>
                     <div key={index} 
                     style={{ top: `${100 + index * 50}px` }}
-                    className={` flex sticky bg-black top-${index+1}0 outfit-main `}>
+                    className={`flex group sticky bg-black top-${index+1}0 outfit-main cursor-pointer`}>
                         <div className="w-2/3 pr-10">
                         <div className='bg-gray-100/10 border border-white/10 p-1.5 rounded-2xl'>
                                             <div className='rounded-2xl p-10 '
@@ -45,8 +45,14 @@ const FeaturedProjects = () => {
                                     background: "radial-gradient(ellipse 80% 60% at 50% 0%, rgba(139, 92, 246, 0.25), transparent 70%), #000000",
                                 }}
                             > 
-                            <h1>{project.description.slice(0, 180)}</h1>
-                                <img className='rounded-2xl shadow-inner shadow-pink-500' src={project.image} />
+                        <div className='flex items-center justify-between mb-8'>
+                                <h1 className='text-xl font-semibold opacity-60 bg-gradient-to-r from-gray-300 via-purple-300 to-pink-300 bg-clip-text text-transparent'>{project.description.slice(0, 120)}</h1> 
+
+                                <div className='w-2/12'>
+                                <button className='ml-4 w-4 group-hover:scale-125 transition-all duration-300 ease-in-out group-hover:translate-x-5'><MoveRight className='w-5 h-5 text-pink-500' /></button>
+                                </div>
+                        </div>
+                                <img className='rounded-2xl shadow-inner group-hover:scale-105 group-hover:rotate-1 transition-all duration-300 ease-in-out' src={project.image} />
                             </div>
                         </div>
                         </div>
