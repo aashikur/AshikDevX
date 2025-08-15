@@ -1,8 +1,9 @@
 "use client";
 
-import SectionTitle from "@/components/ui/SectionTitle";
+import MyBadge from "@/components/ui/MyBadge";
 import React, { useRef, useEffect, useCallback, useMemo } from "react";
-import SkillMarque from "./SkillMarque";
+import Marquee from "react-fast-marquee";
+
 const FallingGlitch = ({
     glitchColors = ["#ff7cce", "#7cf0ff", "#fcf07c", "#8E44AD", "#3498DB"],
     fontSize = 14,
@@ -138,7 +139,7 @@ export default function AboutMarque() {
                 }}
             />
 
-            <div className="flex z-10 flex-col items-center py-10 border  justify-between w-full h-full">
+            <div className="flex z-10 flex-col items-center py-10   justify-between w-full h-full">
 
                 <div className=" p-1">
                     <h1 className="text-2xl text-center font-bold
@@ -147,7 +148,19 @@ export default function AboutMarque() {
                     ">Passionate About Cutting- edge technologies</h1>
                 </div>
                 <div className="border p-1">
-                    ddddd
+                       <MyBadge text="My works" />
+                    
+                    <Marquee
+                     autoFill={true}
+                        speed={100}
+                        // gradient={false}
+                        // gradientColor={[255, 255, 255]}
+                        // pauseOnHover={true}
+                    >
+
+                        <div >Two</div> {' . '}
+                        <div >Three</div> {' . '}
+                    </Marquee>
                 </div>
 
                 <div className="border p-1"> d</div>
