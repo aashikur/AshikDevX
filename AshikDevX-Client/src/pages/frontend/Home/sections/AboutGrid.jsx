@@ -3,7 +3,8 @@
 import AboutMarque from "@/components/frontend/About/AboutMarque";
 import { MoveRight } from "lucide-react";
 import React from "react";
-import Global from "../../About/sections/WorkTogether";
+import WorkTogether from "../../About/sections/WorkTogether";
+import Global from "./Global";
 
 // Simple icon placeholder
 const BoxIcon = (props) => (
@@ -82,9 +83,9 @@ export default function BentoGridCom() {
               background: "radial-gradient(ellipse 80% 60% at 50% 0%, rgba(120, 180, 255, 0.25), transparent 70%), #000000",
             }}
           />
-          <img className="w-40 group-hover:-translate-y-15 transition-all duration-300 z-10 bg-white/10 border border-white/15 p-1.5  rounded-full " 
-          
-          src="public/assets/images/hero3.jpg" alt="" />
+          <img className="w-40 group-hover:-translate-y-15 transition-all duration-300 z-10 bg-white/10 border border-white/15 p-1.5  rounded-full "
+
+            src="public/assets/images/hero3.jpg" alt="" />
         </div>
       </div>,
     },
@@ -95,7 +96,7 @@ export default function BentoGridCom() {
       href: "#",
       className: "row-span-2 md:row-span-2", // Large screens: spans 2 rows
       background: <div className="absolute inset-0" >
-        <AboutMarque/>
+        <AboutMarque />
       </div>,
     },
     {
@@ -105,7 +106,9 @@ export default function BentoGridCom() {
       cta: "Connect Now",
       href: "#",
       className: "row-span-2 md:row-span-2", // Large screens: spans 2 rows
-      background: <div className="absolute inset-0 bg-blue-100" />,
+      background: <div className="absolute inset-0 bg-blue-100" >
+        <Global />
+      </div>,
     },
     {
       name: "",
@@ -115,17 +118,32 @@ export default function BentoGridCom() {
       href: "#",
       className: "",
       background: <div className="absolute inset-0 bg-green-100" >
-        <Global/>
+        <WorkTogether />
       </div>,
     },
     {
-      name: "Card 5",
-      description: "Wide card spanning 2 columns.",
+      name: "The inside scoop",
+      description: "Currently planing SaaS Product & Banking Cash Solution.",
       Icon: BoxIcon,
-      cta: "Start",
+      cta: "View Recent Work",
       href: "#",
       className: "md:col-span-2",
-      background: <div className="absolute inset-0 bg-red-100" />,
+      background: <div className="absolute inset-0 bg-red-100" >
+
+        <div
+          className="absolute inset-0 z-0"
+          style={{
+            background: "#000000",
+            backgroundImage: `
+        radial-gradient(circle at 1px 1px, rgba(139, 92, 246, 0.2) 1px, transparent 0),
+        radial-gradient(circle at 1px 1px, rgba(59, 130, 246, 0.18) 1px, transparent 0),
+        radial-gradient(circle at 1px 1px, rgba(236, 72, 153, 0.15) 1px, transparent 0)
+      `,
+            backgroundSize: "20px 20px, 30px 30px, 25px 25px",
+            backgroundPosition: "0 0, 10px 10px, 15px 5px",
+          }}
+        />
+      </div>,
     },
   ];
 
