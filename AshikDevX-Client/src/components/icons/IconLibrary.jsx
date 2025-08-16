@@ -2,7 +2,6 @@
 import { FaReact, FaNodeJs, FaPython, FaGitAlt, FaHtml5, FaCss3Alt, FaJsSquare, FaFigma } from 'react-icons/fa';
 import { SiMongodb, SiExpress, SiTailwindcss, SiBootstrap, SiRedux, SiNextdotjs, SiGithub, SiDocker, SiPostman } from 'react-icons/si';
 import { GiPolarStar, GiCrystalBall } from 'react-icons/gi';
-import { Plus } from 'lucide-react';
 
 export const IconLibrary = {
   // Frontend
@@ -29,10 +28,7 @@ export const IconLibrary = {
   postman: <SiPostman className="w-4 h-4 text-orange-500" />,
 
   // Misc / Extras
-  plus: <Plus className="w-4 h-4 text-gray-500" />,
   star: <GiPolarStar className="w-4 h-4 text-pink-500" />,
   crystal: <GiCrystalBall className="w-4 h-4 text-purple-500" />,
 };
-
-
 

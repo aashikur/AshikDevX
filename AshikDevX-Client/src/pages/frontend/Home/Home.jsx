@@ -10,6 +10,7 @@ import CTAGetInTouch from './sections/CTAGetInTouch';
 import PricingSection from './sections/PricingSection';
 import TestimonialsSection from './sections/TestimonialsSection';
 import WhatsAppCTA from './sections/WhatsAppCTA';
+import TechStack from './sections/TechStack';
 
 const Home = () => {
     return (
@@ -41,11 +42,13 @@ const Home = () => {
            <div>
             <AboutGrid></AboutGrid>
 
-            <BlogPreviewSection/>
+            {/* <BlogPreviewSection/> */}
 
             <CTAGetInTouch></CTAGetInTouch>
 
             <PricingSection></PricingSection>
+
+            <TechStack/>
 
             <TestimonialsSection></TestimonialsSection>
 
