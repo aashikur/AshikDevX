@@ -201,12 +201,12 @@ export default function AboutMarque() {
 
                 <div className="p-20 group  hover:shadow-xl translate-y-10">
                     {/* X Organizations Black Background with Top Glow */}
-                    <div
+                    {/* <div
                         className="absolute inset-0 z-0 opacity-80"
                         style={{
                             background: "radial-gradient(ellipse 80% 60% at 50% 0%, rgba(120, 180, 255, 0.25), transparent 70%), #000000",
                         }}
-                    />
+                    /> */}
                     <img className=" opacity-0" src="/assets/images/grid-1.jpg" alt="" />
 
 

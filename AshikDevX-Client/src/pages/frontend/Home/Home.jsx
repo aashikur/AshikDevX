@@ -30,6 +30,7 @@ const Home = () => {
         }}
       />
       <AboutMeSection />
+      <div className="py-5"></div>
       <Marquee1 />
       <div id='about'>
         <MyStory></MyStory>
