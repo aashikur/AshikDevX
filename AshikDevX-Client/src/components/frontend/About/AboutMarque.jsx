@@ -126,7 +126,7 @@ const FallingGlitch = ({
 console.log(MarqueData)
 export default function AboutMarque() {
 
-    
+
     return <div className="relative w-full h-full overflow-hidden">
 
         <FallingGlitch
@@ -145,23 +145,88 @@ export default function AboutMarque() {
                     <h1 className="text-2xl text-center font-bold                    
                     ">Passionate About Cutting- edge technologies</h1>
                 </div>
-                <div className="p-1">
-                   
-                    {/* <Marquee
-                        // autoFill={true}
-                        className="flex items-center justify-center"
-                        >
-                        {
-                            MarqueData.map((item, index) => (
-                              <MyBadge key={index} text={item.iconKey} iconKey={item.icon} display="2" />
-                            ))
-                        }
-                    </Marquee> */}
-                    <MyBadge text="React" iconKey={"react"} display="2" />
+                {/* marquee Container  */}
+                <div className="flex justify-between w-full flex-col gap-y-10">
+                    <div className="p-1 w-full">
+                        <Marquee speed={30} pauseOnHover={true}>
+                            {[...Array(2)].map((_, loopIndex) =>
+                                MarqueData &&
+                                MarqueData.slice(0, 3).map((item, index) => (
+                                    <MyBadge
+                                        key={`${loopIndex}-${item.icon}`} // unique key for React
+                                        text={item.icon}
+                                        iconKey={item.iconKey}
+                                        display="2"
+                                    />
+                                ))
+                            )}
+                        </Marquee>
+                        {/* <MyBadge text="React" iconKey={"react"} display="2" /> */}
+                    </div>
+
+                    <div className="p-1 w-full">
+                        <Marquee speed={40} pauseOnHover={true} direction="right">
+                            {[...Array(2)].map((_, loopIndex) =>
+                                MarqueData &&
+                                MarqueData.slice(4, 8).map((item, index) => (
+                                    <MyBadge
+                                        key={`${loopIndex}-${item.icon}`} // unique key for React
+                                        text={item.icon}
+                                        iconKey={item.iconKey}
+                                        display="2"
+                                    />
+                                ))
+                            )}
+                        </Marquee>
+
+                    </div>
+                    <div className="p-1 w-full">
+
+                        <Marquee speed={50} pauseOnHover={true}>
+                            {[...Array(2)].map((_, loopIndex) =>
+                                MarqueData &&
+                                MarqueData.slice(9, 13).map((item, index) => (
+                                    <MyBadge
+                                        key={`${loopIndex}-${item.icon}`} // unique key for React
+                                        text={item.icon}
+                                        iconKey={item.iconKey}
+                                        display="2"
+                                    />
+                                ))
+                            )}
+                        </Marquee>
+
+                    </div>
                 </div>
 
-                <div className="p-1"> </div>
-                <div className="p-1"> </div>
+                <div className="p-20 group border hover:shadow-xl translate-y-10">
+                    {/* X Organizations Black Background with Top Glow */}
+                    <div
+                        className="absolute inset-0 z-0 opacity-80"
+                        style={{
+                            background: "radial-gradient(ellipse 80% 60% at 50% 0%, rgba(120, 180, 255, 0.25), transparent 70%), #000000",
+                        }}
+                    />
+                    <img className=" opacity-0" src="/assets/images/grid-1.jpg" alt="" />
+
+
+                    <img className="absolute 
+                      shadow-2xl shadow-sky-200/50
+                             top-15  left-1/2 -translate-x-1/2 group-hover:translate-40 group-hover:scale-50 w-8/12 rounded-xl  
+                            transition-all duration-300 ease-[cubic-bezier(0.34,1.56,0.64,1)]" src="/assets/images/grid-1.jpg" alt="" />
+                    <img className="absolute
+                            top-15 
+                            group-hover:shadow-2xl shadow-orange-200/50
+                             group-hover:left-1/2 group-hover:-translate-x-1/2
+                             group-hover:translate-y-0 group-hover:scale-100
+                             translate-y-40 -translate-x-80 scale-50
+                             
+                             
+                             w-8/12 rounded-xl  
+                            transition-all duration-300 ease-[cubic-bezier(0.34,1.56,0.64,1)]" src="/assets/images/grid-2.jpg" alt="" />
+                </div>
+                {/* <div className="p-1"></div> */}
+
             </div>
 
         </FallingGlitch>

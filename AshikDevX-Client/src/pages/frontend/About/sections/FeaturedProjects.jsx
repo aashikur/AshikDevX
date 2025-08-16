@@ -52,7 +52,7 @@ const FeaturedProjects = () => {
 
   return (
     // Main container
-    <div className='max-w-[1400px] mx-auto md:p-8 relative'>
+    <div className='max-w-[1400px] mx-auto py-20 md:p-8 relative '>
       {/* Section title component */}
       <SectionTitle></SectionTitle>
 

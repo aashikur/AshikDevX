@@ -47,3 +47,29 @@ const ToggleLightDark = () => {
 };
 
 export default ToggleLightDark;
+
+/*
+How to Dark/Light -> DaisyUI + Tailwind + Dark:Class Active 
+## Import this 'ToggleLightDark' your Project. And it will handle your light and dark mode.
+
+1. You Have Light/Dark (if need more) mode. System in your index.css 
+
+ -> for DaisyUi Default dark/light reflection
+ -> variant -> for Custom Control over Daisy UI, using dark:Class-name
+
+--------------------------------------------------------------------------
+index.css
+
+ @plugin "daisyui" {
+  theme: [dark, light];
+ }
+ @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+ -------------------------------------------------------------------------
+
+
+2. By Default it will be 'dark mode.
+Import ToggleLightDark.jsx
+
+(return localStorage.getItem("theme") || "dark";)
+*/

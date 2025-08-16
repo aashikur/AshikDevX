@@ -3,7 +3,7 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { Home, User, FolderGit2, Code2, Mail, Menu, X } from 'lucide-react';
-import ToggleLightDark from '../../reuse/ToggleLightDark';
+import ToggleLightDark from '../../.reuse/ToggleLightDark';
 import { CgMenuMotion } from "react-icons/cg";
 
 const menuItems = [

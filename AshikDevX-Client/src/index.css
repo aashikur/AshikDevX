@@ -2,7 +2,7 @@
  /* Method 1 : Dark Mode Toggle dark:class */
 /* ======================================================================= */
  @plugin "daisyui" {
-  themes: dark , light;
+  theme: [dark, light];
  }
  @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 

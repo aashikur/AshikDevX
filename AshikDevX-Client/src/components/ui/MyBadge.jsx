@@ -16,7 +16,7 @@ const MyBadge = ({
                 </button>
             }
             {display == '2' &&
-                <button className="badge backdrop-blur-[2px] bg-gray-700/30 rounded-xl p-4 border border-gray-700">
+                <button className="badge transition-scale duration-300 ease-[cubic-bezier(0.34,1.56,0.64,1)] hover:scale-105 hover:shadow-xl backdrop-blur-[2px] mr-3 bg-gray-700/30 rounded-xl p-4 border border-gray-700">
                     {iconKey && IconLibrary[iconKey]}
                     {icon && <span className=''>{icon}</span>}  {text}
                 </button>

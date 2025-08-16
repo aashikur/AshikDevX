@@ -69,9 +69,9 @@ export default function BentoGridCom() {
       name: "Collaboration",
       description: "I prioritize client collaboration, fostering open communications.",
       Icon: BoxIcon,
-      cta: "Learn More",
+      cta: "Connect with Ashik",
       href: "#",
-      className: "md:col-span-2", // Large screens: spans 2 columns
+      className: "md:col-span-2 ", // Large screens: spans 2 columns
       background: <div className="absolute inset-0 group " >
         <div className="flex justify-center items-center h-full">
           {/* X Organizations Black Background with Top Glow */}
@@ -81,19 +81,18 @@ export default function BentoGridCom() {
               background: "radial-gradient(ellipse 80% 60% at 50% 0%, rgba(120, 180, 255, 0.25), transparent 70%), #000000",
             }}
           />
-          <img className="w-40 translate-y-2 z-10 bg-white/10 border border-white/15 p-1.5  rounded-full " 
+          <img className="w-40 group-hover:-translate-y-15 transition-all duration-300 z-10 bg-white/10 border border-white/15 p-1.5  rounded-full " 
           
           src="public/assets/images/hero3.jpg" alt="" />
         </div>
       </div>,
     },
     {
-      name: "Card 2",
-      description: "Tall card taking 2 rows.",
+      name: "",
       Icon: BoxIcon,
-      cta: "View",
+      cta: "View All Projects",
       href: "#",
-      className: "md:row-span-2", // Large screens: spans 2 rows
+      className: "row-span-2 md:row-span-2", // Large screens: spans 2 rows
       background: <div className="absolute inset-0" >
         <AboutMarque/>
       </div>,

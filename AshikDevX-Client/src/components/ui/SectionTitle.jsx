@@ -22,7 +22,7 @@ const SectionTitle = ({
           {gradientText}
         </span>
       </h1>
-      <p className='text-[1.125rem] text-gray-500'>{description}</p>
+      <p className=' sm:text-[1.125rem] text-gray-500'>{description}</p>
     </div>
   );
 };
