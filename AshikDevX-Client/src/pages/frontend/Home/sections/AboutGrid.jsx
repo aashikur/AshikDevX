@@ -3,6 +3,7 @@
 import AboutMarque from "@/components/frontend/About/AboutMarque";
 import { MoveRight } from "lucide-react";
 import React from "react";
+import Global from "../../About/sections/WorkTogether";
 
 // Simple icon placeholder
 const BoxIcon = (props) => (
@@ -98,22 +99,24 @@ export default function BentoGridCom() {
       </div>,
     },
     {
-      name: "Card 3",
-      description: "Another tall card.",
+      name: "Remote",
+      description: "Bangladesh",
       Icon: BoxIcon,
-      cta: "Explore",
+      cta: "Connect Now",
       href: "#",
-      className: "md:row-span-2", // Large screens: spans 2 rows
+      className: "row-span-2 md:row-span-2", // Large screens: spans 2 rows
       background: <div className="absolute inset-0 bg-blue-100" />,
     },
     {
-      name: "Card 4",
-      description: "Regular height card.",
+      name: "",
+      description: "",
       Icon: BoxIcon,
-      cta: "Go",
+      cta: "",
       href: "#",
       className: "",
-      background: <div className="absolute inset-0 bg-green-100" />,
+      background: <div className="absolute inset-0 bg-green-100" >
+        <Global/>
+      </div>,
     },
     {
       name: "Card 5",
