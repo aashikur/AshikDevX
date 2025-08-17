@@ -1,0 +1,305 @@
+{
+  "categories": [
+    {
+      "id": "web-development",
+      "name": "Web Development",
+      "packages": [
+        {
+          "id": "web-dev-basic",
+          "title": "Basic Development",
+          "description": "Development for simple websites",
+          "features": [
+            "Single page website (HTML/CSS/JS)",
+            "Fully mobile responsive development",
+            "Basic contact form with email functionality",
+            "SEO friendly structure (Semantic HTML)",
+            "Basic animations (CSS transitions)",
+            "Social media integration",
+            "Basic security setup (HTTPS, form validation)",
+            "Cross browser compatibility testing",
+            "10 days bug fixing support",
+            "Delivery in 1 day"
+          ],
+          "price": {
+            "international": "$139/project",
+            "local": "৳15,000/project"
+          },
+          "mostPopular": false
+        },
+        {
+          "id": "web-dev-standard",
+          "title": "Standard Development",
+          "description": "Advanced development for services websites",
+          "features": [
+            "Everything in Basic Development",
+            "Up to 6 pages with dynamic content",
+            "Interactive elements (Sliders, tabs, accordions)",
+            "API integrations (Google Maps, social media)",
+            "Advanced animations (GSAP/Scroll-triggered)",
+            "User authentication system",
+            "Database integration (For forms/data)",
+            "Advanced security measures (Firewall setup)",
+            "Performance optimization (Lazy loading, etc.)",
+            "18 days support",
+            "Delivery in 1-2 weeks"
+          ],
+          "price": {
+            "international": "$379/project",
+            "local": "৳40,000/project"
+          },
+          "mostPopular": true
+        },
+        {
+          "id": "web-dev-premium",
+          "title": "Premium Development",
+          "description": "Complex web applications and large sites",
+          "features": [
+            "Everything in Standard Development",
+            "Unlimited pages with complex functionality",
+            "E-commerce functionality (Shopping cart, checkout)",
+            "User accounts system with profiles",
+            "Custom database architecture",
+            "Premium plugins/licenses included",
+            "Multi language support",
+            "Advanced search functionality",
+            "Payment gateway integration (Stripe/PayPal)",
+            "API development (REST/GraphQL)",
+            "Automated email systems",
+            "1 month premium support",
+            "Performance optimization audit",
+            "Delivery in 3-4 weeks",
+            "Technical training sessions"
+          ],
+          "price": {
+            "international": "$899/project",
+            "local": "৳95,000/project"
+          },
+          "mostPopular": false
+        }
+      ]
+    },
+    {
+      "id": "cms-solutions",
+      "name": "CMS Solutions",
+      "packages": [
+        {
+          "id": "cms-basic",
+          "title": "Basic CMS",
+          "description": "Simple CMS Website",
+          "features": [
+            "WordPress/Wix/Squarespace/Shopify setup and configuration",
+            "Theme customization (Child theme setup)",
+            "3 pages content population (Your content)",
+            "Basic plugin setup (SEO, security, caching)",
+            "Mobile optimization testing",
+            "Contact form integration",
+            "Social media integration",
+            "1 month support",
+            "Delivery in 3-5 days"
+          ],
+          "price": {
+            "international": "$239/project",
+            "local": "৳25,000/project"
+          },
+          "mostPopular": false
+        },
+        {
+          "id": "cms-standard",
+          "title": "Standard CMS",
+          "description": "Advanced CMS with eCommerce",
+          "features": [
+            "Everything in Basic CMS",
+            "WooCommerce/Shopify setup and configuration",
+            "Custom theme development (From your design)",
+            "10 pages content population",
+            "Payment gateway integration (Stripe/PayPal)",
+            "Product catalog setup (Up to 12 products)",
+            "Inventory management system",
+            "User account functionality",
+            "Advanced security measures",
+            "18 days support",
+            "Delivery in 1-2 weeks"
+          ],
+          "price": {
+            "international": "$559/project",
+            "local": "৳58,000/project"
+          },
+          "mostPopular": true
+        },
+        {
+          "id": "cms-premium",
+          "title": "Premium CMS",
+          "description": "Enterprise CMS solutions",
+          "features": [
+            "Everything in Standard CMS",
+            "Custom CMS development (Tailored to your needs)",
+            "Unlimited pages content population",
+            "Multisite setup and configuration",
+            "Custom plugin development (Specific functionality)",
+            "Advanced security hardening",
+            "Multi language support (WPML/Polylang)",
+            "Custom reporting dashboard",
+            "Automated backup system",
+            "API integrations (Third-party services)",
+            "1 month premium support",
+            "Delivery in 3-4 weeks",
+            "Admin training"
+          ],
+          "price": {
+            "international": "$749/project",
+            "local": "৳78,000/project"
+          },
+          "mostPopular": false
+        }
+      ]
+    },
+    {
+      "id": "bug-fixing",
+      "name": "Bug Fixing",
+      "packages": [
+        {
+          "id": "bug-basic",
+          "title": "Basic Fixes",
+          "description": "Essential bug fixes and adjustments",
+          "features": [
+            "Single bug fixes (JavaScript, CSS, HTML)",
+            "Cross browser compatibility testing",
+            "Mobile responsiveness fixes (2 device sizes)",
+            "Basic performance tweaks",
+            "Form validation fixes",
+            "Broken link repair",
+            "3 days turnaround time",
+            "Detailed report of changes made"
+          ],
+          "price": {
+            "international": "$59/project",
+            "local": "৳6,000/project"
+          },
+          "mostPopular": false
+        },
+        {
+          "id": "bug-standard",
+          "title": "Standard Fixes",
+          "description": "Comprehensive debugging package",
+          "features": [
+            "Everything in Basic Fixes",
+            "Up to 10 bug fixes of varying complexity",
+            "Advanced responsiveness (All device sizes)",
+            "Performance optimization (LCP, FID, CLS)",
+            "Security patches (XSS, CSRF protection)",
+            "Database error resolution",
+            "Plugin/script conflict resolution",
+            "3 days turnaround for critical issues",
+            "Performance audit report",
+            "Implementation guide"
+          ],
+          "price": {
+            "international": "$139/project",
+            "local": "৳15,000/project"
+          },
+          "mostPopular": true
+        },
+        {
+          "id": "bug-premium",
+          "title": "Premium Fixes",
+          "description": "Complete website overhaul",
+          "features": [
+            "Everything in Standard Fixes",
+            "Unlimited bug fixes during project timeline",
+            "Complete responsive redesign if needed",
+            "Core Web Vitals optimization (90+ scores)",
+            "Emergency fixes (24hr response time)",
+            "Complete security audit and hardening",
+            "Database optimization",
+            "Custom code refactoring",
+            "Priority support queue",
+            "Post optimization monitoring"
+          ],
+          "price": {
+            "international": "$229/project",
+            "local": "৳24,000/project"
+          },
+          "mostPopular": false
+        }
+      ]
+    },
+    {
+      "id": "maintenance",
+      "name": "Maintenance",
+      "packages": [
+        {
+          "id": "maint-basic",
+          "title": "Basic Care",
+          "description": "Essential website maintenance",
+          "features": [
+            "Weekly automated backups (Cloud storage)",
+            "Security monitoring (Malware scans)",
+            "Software updates (Core, plugins, themes)",
+            "Uptime monitoring (8am-8pm)",
+            "Monthly performance reports",
+            "Email support (48hr response)",
+            "Basic security hardening",
+            "Database optimization",
+            "Broken link checking",
+            "Form functionality testing",
+            "Content updates (12 hours/month)",
+            "Google Analytics review"
+          ],
+          "price": {
+            "international": "$89/month",
+            "local": "৳9,500/month"
+          },
+          "mostPopular": false
+        },
+        {
+          "id": "maint-standard",
+          "title": "Standard Care",
+          "description": "Complete maintenance package",
+          "features": [
+            "Everything in Basic Care",
+            "Daily automated backups (Multiple restore points)",
+            "24/7 uptime monitoring",
+            "Weekly software updates (Core, plugins, themes)",
+            "Malware scanning & removal",
+            "Performance optimization (Monthly tune-up)",
+            "22 hours content updates/month",
+            "Phone & email support (24hr response)",
+            "Advanced security measures",
+            "SEO maintenance (Broken SEO fixes)",
+            "Plugin audit and cleanup",
+            "Spam protection"
+          ],
+          "price": {
+            "international": "$169/month",
+            "local": "৳18,000/month"
+          },
+          "mostPopular": true
+        },
+        {
+          "id": "maint-premium",
+          "title": "Premium Care",
+          "description": "Enterprise grade maintenance",
+          "features": [
+            "Everything in Standard Care",
+            "Real time backups (Every change saved)",
+            "Advanced security hardening (WAF setup)",
+            "Unlimited content updated",
+            "Weekly performance reports",
+            "Weekly software updates (Core, plugins, themes)",
+            "Emergency support (1hr response time)",
+            "SEO maintenance (Ranking tracking)",
+            "Conversion rate optimization",
+            "Analytics reporting (Custom dashboards)",
+            "Quarterly security audits",
+            "White glove onboarding"
+          ],
+          "price": {
+            "international": "$299/month",
+            "local": "৳32,000/month"
+          },
+          "mostPopular": false
+        }
+      ]
+    }
+  ]
+}

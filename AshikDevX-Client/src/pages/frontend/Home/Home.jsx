@@ -13,6 +13,7 @@ import WhatsAppCTA from './sections/WhatsAppCTA';
 import TechStack from './sections/TechStack';
 import Marquee1 from './sections/Marquee1';
 import Marquee2 from './sections/Marquee2';
+import PricingSection2 from './sections/PricingSection2';
 
 const Home = () => {
   return (
@@ -50,7 +51,8 @@ const Home = () => {
 
         <CTAGetInTouch></CTAGetInTouch>
 
-        <PricingSection></PricingSection>
+        {/* <PricingSection></PricingSection> */}
+        <PricingSection2></PricingSection2>
 
         <TechStack />
         <div className='py-5'></div>
