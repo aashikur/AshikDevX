@@ -1,19 +1,15 @@
 import React from 'react';
-import HeroSection from './sections/HeroSection';
 import AboutMeSection from './sections/HeroSection2';
 import AboutGrid from './sections/AboutGrid';
-import Marque from './sections/Marque';
 import MyStory from '@/pages/frontend/About/sections/MyStory';
 import FeaturedProjects from '../About/sections/FeaturedProjects';
-import BlogPreviewSection from './sections/BlogPreviewSection';
 import CTAGetInTouch from './sections/CTAGetInTouch';
-import PricingSection from './sections/PricingSection';
-import TestimonialsSection from './sections/TestimonialsSection';
-import WhatsAppCTA from './sections/WhatsAppCTA';
+import Reviews from './sections/Reviews';
 import TechStack from './sections/TechStack';
 import Marquee1 from './sections/Marquee1';
 import Marquee2 from './sections/Marquee2';
 import PricingSection2 from './sections/PricingSection2';
+import JoinWhatsappCTA from './sections/JoinWhatsappCTA';
 
 const Home = () => {
   return (
@@ -59,9 +55,9 @@ const Home = () => {
         <Marquee2 />
 
 
-        <TestimonialsSection></TestimonialsSection>
+        <Reviews></Reviews>
 
-        <WhatsAppCTA></WhatsAppCTA>
+        <JoinWhatsappCTA></JoinWhatsappCTA>
       </div>
     </div>
   );

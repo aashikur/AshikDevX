@@ -1,12 +1,11 @@
 import { Outlet } from "react-router";
 import Navbar from "../components/common/Navbar";
+import Footer from "@/components/common/Footer";
 
 const RootLayout = () => {
   return (
-    <div className="bg-red-50">
-       <div
-    className="absolute inset-0 z-0"
-    style={{
+    <div
+        style={{
       background: "",
       backgroundImage: `
         linear-gradient(to right, rgba(71,85,105,0.3) 1px, transparent 1px),
@@ -15,11 +14,16 @@ const RootLayout = () => {
       `,
       backgroundSize: "32px 32px, 32px 32px, 100% 100%",
     }}
+    >
+       <div
+    className="absolute  inset-0 z-0"
+
   />
       <Navbar/>
       <main className="overflow-x-clip">
         <Outlet></Outlet>
       </main>
+      <Footer/>
     </div>
   );
 };

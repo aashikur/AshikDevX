@@ -22,38 +22,35 @@ const CheckIcon = () => (
   </svg>
 );
 
-// --- NEW COMPONENT: Currency Toggle Switch ---
-const CurrencyToggle = ({ currencyType, setCurrencyType }) => {
-  const isInternational = currencyType === "international";
 
+// --- MODIFICATION START: New Segmented Control Toggle ---
+const CurrencyToggle = ({ currencyType, setCurrencyType }) => {
   return (
-    <button
-      onClick={() =>
-        setCurrencyType(isInternational ? "local" : "international")
-      }
-      className="relative inline-flex items-center h-8 w-28 flex-shrink-0 cursor-pointer rounded-full border-2 border-transparent bg-gray-200 dark:bg-gray-700 transition-colors duration-200 ease-in-out focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900"
-    >
-      <span className="sr-only">Use setting</span>
-      <span
-        className={`absolute inset-0 flex items-center justify-center text-sm font-semibold text-gray-500 dark:text-gray-400`}
+    <div className="flex p-1 space-x-1 bg-gray-200 dark:bg-gray-700/80 rounded-full">
+      <button
+        onClick={() => setCurrencyType("international")}
+        className={`px-5 py-1.5 rounded-full text-sm font-semibold transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900 ${
+          currencyType === "international"
+            ? "bg-white dark:bg-gray-900 text-indigo-600 dark:text-white shadow"
+            : "text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200"
+        }`}
       >
-        <span className={`${isInternational ? "opacity-0" : "opacity-100"}`}>
-          BD (৳)
-        </span>
-        <span className={`${isInternational ? "opacity-100" : "opacity-0"}`}>
-          Int'l ($)
-        </span>
-      </span>
-      <span
-        aria-hidden="true"
-        className={`${
-          isInternational ? "translate-x-14" : "translate-x-1"
-        } pointer-events-none inline-block h-6 w-12 transform rounded-full bg-white dark:bg-gray-900 shadow ring-0 transition duration-200 ease-in-out`}
-      />
-    </button>
+        USD
+      </button>
+      <button
+        onClick={() => setCurrencyType("local")}
+        className={`px-5 py-1.5 rounded-full text-sm font-semibold transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900 ${
+          currencyType === "local"
+            ? "bg-white dark:bg-gray-900 text-indigo-600 dark:text-white shadow"
+            : "text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200"
+        }`}
+      >
+        BDT
+      </button>
+    </div>
   );
 };
-
+// --- MODIFICATION END ---
 const PricingSection2 = () => {
   const [currencyType, setCurrencyType] = useState("international"); // 'international' or 'local'
   const [activeCategory, setActiveCategory] = useState(
