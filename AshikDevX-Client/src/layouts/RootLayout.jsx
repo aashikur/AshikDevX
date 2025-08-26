@@ -1,6 +1,8 @@
 import { Outlet } from "react-router";
 import Navbar from "../components/common/Navbar";
 import Footer from "@/components/common/Footer";
+import Navbar2 from "@/components/common/Navbar2";
+import LeftLogo from "@/components/common/LeftLogo";
 
 const RootLayout = () => {
   return (
@@ -19,7 +21,14 @@ const RootLayout = () => {
     className="absolute  inset-0 z-0"
 
   />
-      <Navbar/>
+
+  <div className="relative border max-w-[1400px] mx-auto z-50">
+    <div className="fixed inset-0 left-10 top-8 z-50">
+    <LeftLogo/>
+  </div>
+  </div>
+      {/* <Navbar/> */}
+      <Navbar2/>
       <main className="overflow-x-clip">
         <Outlet></Outlet>
       </main>

@@ -102,7 +102,7 @@ export default function PortfolioNavbar() {
     let lastScrollY = window.scrollY;
 
     const handleScroll = () => {
-      if (window.scrollY > lastScrollY) {
+      if (window.scrollY > lastScrollY && window.scrollY > 400) {
         // Scrolling Down → hide navbar
         setIsScrolled(true);
       } else {

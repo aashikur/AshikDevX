@@ -10,6 +10,7 @@ import Marquee1 from './sections/Marquee1';
 import Marquee2 from './sections/Marquee2';
 import PricingSection2 from './sections/PricingSection2';
 import JoinWhatsappCTA from './sections/JoinWhatsappCTA';
+import Navbar2 from '@/components/common/Navbar2';
 
 const Home = () => {
   return (
