@@ -1,6 +1,3 @@
-Absolutely! Based on the structure and your live site, here’s a polished **Portfolio README.md** tailored for your React portfolio project. I’ve kept it clean, modern, and professional, ready for GitHub.
-
-```markdown
 # 💻 AshikurDevX Portfolio - Web Developer Showcase (React)
 
 ## 🌐 Live Site
