@@ -12,7 +12,7 @@ const LeftLogo = () => {
                     alt="Profile"
                 />
                 <div className='inter-main leading-0.5 hidden xl:block'>
-                    <p className='font-bold text-lg'>Md. Ashikur Rahaman</p>
+                    <p className='font-bold text-lg'>Ashikur Rahaman</p>
                     <p className='text-gray-400 outfit-main text-xs'>
                         Code Meets Creativity.
                     </p>
