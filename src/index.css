@@ -1,31 +1,32 @@
+/* 1️⃣ Google Fonts import must be at the top */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap');
+
+/* 2️⃣ Tailwind import next */
 @import "tailwindcss";
 
-/* Method 1 : Dark Mode Toggle dark:class */
-/* ======================================================================= */
+/* 3️⃣ daisyUI plugin */
 @plugin "daisyui" {
   theme: [dark, light];
 }
 
+/* 4️⃣ Custom variant */
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&display=swap');
-
-.inter-main {
-  /* font-family: "Inter", sans-serif; */
+/* 5️⃣ Your styles */
+.inter-main , .font-inter{
   font-family: "Outfit", sans-serif;
   font-optical-sizing: auto;
 }
 
-.outfit-main {
+.outfit-main, .font-outfit {
   font-family: "Outfit", sans-serif;
   font-optical-sizing: auto;
 }
 
 body {
   font-family: "Outfit", sans-serif;
-
 }
 
 a.active span {
-  @apply text-white
+  @apply text-white;
 }

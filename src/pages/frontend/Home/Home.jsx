@@ -11,6 +11,7 @@ import Marquee2 from './sections/Marquee2';
 import PricingSection2 from './sections/PricingSection2';
 import JoinWhatsappCTA from './sections/JoinWhatsappCTA';
 import Navbar2 from '@/components/common/Navbar2';
+import AboutMarque from '@/components/frontend/About/AboutMarque';
 
 const Home = () => {
   return (
@@ -28,6 +29,7 @@ const Home = () => {
         }}
       />
       <AboutMeSection />
+ 
       <div className="py-5"></div>
       <Marquee1 />
       <div id='about'>

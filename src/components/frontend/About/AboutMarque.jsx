@@ -127,7 +127,7 @@ console.log(MarqueData)
 export default function AboutMarque() {
 
 
-    return <div className="relative w-full h-full overflow-hidden">
+    return <div className="relative w-full h-full overflow-hidden ">
 
         <FallingGlitch
 

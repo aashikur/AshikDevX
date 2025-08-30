@@ -3,6 +3,7 @@ import Navbar from "../components/common/Navbar";
 import Footer from "@/components/common/Footer";
 import Navbar2 from "@/components/common/Navbar2";
 import LeftLogo from "@/components/common/LeftLogo";
+import ToggleLightDark from "@/.reuse/ToggleLightDark";
 
 const RootLayout = () => {
   return (
@@ -22,11 +23,20 @@ const RootLayout = () => {
 
   />
 
-  <div className="relative border max-w-[1400px] mx-auto z-50">
+  <div className="relative border max-w-[1400px] mx-auto z-50 ">
     <div className="fixed inset-0 left-10 top-8 z-50">
     <LeftLogo/>
   </div>
   </div>
+
+  <div className="relative border max-w-[1400px] mx-auto z-50">
+    <div className="fixed  right-10 top-8 z-50">
+    <ToggleLightDark/>
+  </div>
+  </div>
+
+
+
       {/* <Navbar/> */}
       <Navbar2/>
       <main className="overflow-x-clip">

@@ -49,27 +49,77 @@ The website is fully responsive and optimized for both web and mobile experience
 
 ```
 
-src/
+portfolio-1/
 │
-├── assets/                      # Images, icons, fonts
-├── components/                  # Reusable React components
-│   ├── common/                  # Global components (Navbar, Footer, Buttons)
-│   ├── frontend/                # Frontend-only components (Hero, ProjectCard, CTA)
-│   └── dashboard/               # Admin/dashboard components (if any)
-├── context/                     # React Context Providers
-├── hooks/                       # Custom React hooks
-├── layouts/                     # Layout wrappers (FrontendLayout, DashboardLayout)
-├── pages/                       # Pages grouped by frontend/dashboard
-│   ├── frontend/                # Home, About, Portfolio, Services, Blog, Reviews
-│   └── dashboard/               # Dashboard pages (optional)
-├── styles/                      # Global styles & Tailwind config
-├── utils/                       # Helpers, validations, constants
-├── App.jsx                      # Main App component with routing
-└── index.jsx                    # ReactDOM render entry
+├─ public/
+│   └─ assets/                # static images, logos, fonts
+│
+├─ src/
+│   ├─ assets/
+│   │   ├─ images/
+│   │   ├─ videos/
+│   │   └─ icons/
+│   │
+│   ├─ components/            # reusable components
+│   │   ├─ common/            # buttons, modals, navbar, footer
+│   │   ├─ hero/
+│   │   ├─ portfolio/
+│   │   └─ forms/
+│   │
+│   ├─ pages/                 # public pages
+│   │   ├─ Home.jsx
+│   │   ├─ About.jsx
+│   │   ├─ Portfolio.jsx
+│   │   ├─ Blog.jsx
+│   │   └─ Contact.jsx
+│   │
+│   ├─ dashboard/             # admin/client dashboard
+│   │   ├─ components/        # dashboard-specific reusable components
+│   │   │   ├─ sidebar/
+│   │   │   ├─ cards/
+│   │   │   └─ charts/
+│   │   │
+│   │   ├─ pages/
+│   │   │   ├─ DashboardHome.jsx
+│   │   │   ├─ Analytics.jsx
+│   │   │   ├─ Projects.jsx
+│   │   │   ├─ Users.jsx
+│   │   │   └─ Settings.jsx
+│   │   │
+│   │   ├─ layouts/
+│   │   │   └─ DashboardLayout.jsx
+│   │   │
+│   │   ├─ hooks/
+│   │   └─ context/
+│   │
+│   ├─ layouts/                # public layouts
+│   │   └─ MainLayout.jsx
+│   │
+│   ├─ hooks/                  # custom hooks
+│   │
+│   ├─ context/                # React context / global state
+│   │
+│   ├─ routes/                 # routing config
+│   │   ├─ AppRoutes.jsx       # public routes
+│   │   └─ DashboardRoutes.jsx # dashboard routes
+│   │
+│   ├─ services/               # API calls, fetch logic
+│   │
+│   ├─ utils/                  # helpers
+│   │
+│   ├─ styles/                 # tailwind / global CSS
+│   │   └─ index.css
+│   │
+│   ├─ App.jsx
+│   └─ main.jsx
+│
+├─ tailwind.config.js
+├─ postcss.config.js
+├─ vite.config.js
+└─ package.json
 
-````
+```
 
----
 
 ## 🔑 Technologies Used
 
