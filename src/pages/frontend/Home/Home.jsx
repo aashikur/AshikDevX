@@ -12,6 +12,7 @@ import PricingSection2 from './sections/PricingSection2';
 import JoinWhatsappCTA from './sections/JoinWhatsappCTA';
 import Navbar2 from '@/components/common/Navbar2';
 import AboutMarque from '@/components/frontend/About/AboutMarque';
+import Section from '@/components/ui/Section';
 
 const Home = () => {
   return (
@@ -59,6 +60,9 @@ const Home = () => {
 
 
         <Reviews></Reviews>
+        <Section > 
+          This is new Section
+        </Section>
 
         <JoinWhatsappCTA></JoinWhatsappCTA>
       </div>

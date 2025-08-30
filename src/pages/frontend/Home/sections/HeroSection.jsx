@@ -1,22 +1,23 @@
 "use client";
 
+import Button from "@/components/ui/Button";
 import React from "react";
 
-const Button = ({ children, variant = "primary", className = "" }) => {
-  const baseClasses =
-    "px-5 py-2.5 rounded-lg font-semibold text-sm transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 transform hover:scale-105";
-  const variants = {
-    primary:
-      "bg-gray-900 dark:bg-white text-white dark:text-black hover:bg-gray-800 dark:hover:bg-gray-200 focus:ring-gray-900 dark:focus:ring-gray-300",
-    secondary:
-      "bg-white dark:bg-gray-900 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-800 focus:ring-gray-300 dark:focus:ring-gray-600 shadow-sm border border-gray-200 dark:border-gray-700",
-  };
-  return (
-    <button className={`${baseClasses} ${variants[variant]} ${className}`}>
-      {children}
-    </button>
-  );
-};
+// const Button = ({ children, variant = "primary", className = "" }) => {
+//   const baseClasses =
+//     "px-5 py-2.5 rounded-lg font-semibold text-sm transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 transform hover:scale-105";
+//   const variants = {
+//     primary:
+//       "bg-gray-900 dark:bg-white text-white dark:text-black hover:bg-gray-800 dark:hover:bg-gray-200 focus:ring-gray-900 dark:focus:ring-gray-300",
+//     secondary:
+//       "bg-white dark:bg-gray-900 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-800 focus:ring-gray-300 dark:focus:ring-gray-600 shadow-sm border border-gray-200 dark:border-gray-700",
+//   };
+//   return (
+//     <button className={`${baseClasses} ${variants[variant]} ${className}`}>
+//       {children}
+//     </button>
+//   );
+// };
 
 const HeroSection = () => {
   return (
