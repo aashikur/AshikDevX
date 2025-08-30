@@ -3,7 +3,6 @@ import RootLayout from "../layouts/RootLayout";
 import Home from "../pages/frontend/Home/Home";
 import About from "@/pages/frontend/About/About";
 import Projects from "@/pages/frontend/Projects/Projects";
-import Services from "@/pages/frontend/Services/Services";
 
 
 const mainRoutes = createBrowserRouter([
@@ -36,7 +35,7 @@ const mainRoutes = createBrowserRouter([
       },
       {
         path: "/services",
-        element: <Services/>,
+        element: <div>Services</div>,
       },
       {
         path: "/skills",
