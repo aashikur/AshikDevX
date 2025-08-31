@@ -6,7 +6,7 @@ const Section = ({
   title,
   subtitle,
   description,
-  cta ='View All',
+  cta,
   children,
   className = "",
   containerClass = "",

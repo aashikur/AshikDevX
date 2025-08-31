@@ -33,7 +33,7 @@ const HeroContent = () => {
           <span className="inline-block px-4 mt-5 py-1.5 text-xs font-semibold tracking-wider text-blue-600 dark:text-blue-400 uppercase bg-blue-100 dark:bg-blue-900/30 rounded-full">
             Welcome to my universe
           </span>
-          <h1 className="mt-3  sm:mt-6 font-light text-5xl sm:text-5xl lg:text-7xl  tracking-tight  text-gray-900 dark:text-white leading-14 sm:leading-tight max-w-xl">
+          <h1 className="mt-3  sm:mt-6 font-bold text-5xl sm:text-5xl lg:text-7xl  tracking-tight  text-gray-900 dark:text-white leading-14 sm:leading-tight max-w-xl">
            Full-Stack <br/><span className="font-bold"> Developer</span> & <br/><span className="text-blue-500 font-bold">Creative {' '}</span> 
             Coder
           </h1>

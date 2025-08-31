@@ -102,15 +102,15 @@ const FeaturedProjects = () => {
             </div>
 
             {/* Right side: project title, description, features, badges */}
-            <div className={`md:w-1/3 flex flex-col justify-center  rounded-2xl z-${index} bg-black backdrop-blur-2xl`}>
+            <div className={`md:w-1/3 flex pb-6  flex-col justify-center  rounded-2xl z-${index} bg-black backdrop-blur-2xl`}>
               {/* Project title with indicator dot */}
               <div className="flex items-center gap-2 mt-5">
                 <span className='w-5 mt-1 h-1 bg-pink-500 rounded-full hidden'></span>
-                <h1 className='text-2xl font-semibold'>{project.title}</h1>
+                <h1 className='text-2xl font-semibold px-4 pb-1 sm:px-6'>{project.title}</h1>
               </div>
 
               {/* Project description and features */}
-              <div className='p-2  md:p-6'>
+              <div className='px-4  sm:p-6'>
                 <p className='text-[#a1a1a1]  text-sm md:text-base  '>{project.description}</p>
 
                 {/* Features list */}
