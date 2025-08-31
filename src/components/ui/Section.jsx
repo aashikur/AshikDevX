@@ -1,10 +1,12 @@
 import React from "react";
+import ButtonMix from "./ButtonMix";
 
 const Section = ({
   id,
   title,
   subtitle,
   description,
+  cta ='View All',
   children,
   className = "",
   containerClass = "",
@@ -13,7 +15,7 @@ const Section = ({
   return (
     <section
       id={id}
-      className={`w-full py-12 md:py-20  ${className}`}
+      className={`w-full py-12 md:py-20   border my-1 ${className}`}
     >
       <div className={`max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ${containerClass}`}>
         {/* Section Header */}
@@ -42,6 +44,9 @@ const Section = ({
         {/* Section Content */}
         <div>{children}</div>
       </div>
+      {cta && <div className="text-center">
+      <ButtonMix style="1" className="text-sm h-10">{cta}</ButtonMix>
+        </div>}
     </section>
   );
 };

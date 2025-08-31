@@ -5,6 +5,7 @@ import { ArrowUpToLine, Download } from "lucide-react";
 import React from "react";
 import { FaArrowUpLong } from "react-icons/fa6";
 import HeroContent from "./HeroContent";
+import Section from "@/components/ui/Section";
 
 const DotIcon = () => <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
   <circle cx="4" cy="4" r="4" fill="currentColor" />
@@ -112,26 +113,23 @@ const CoderProfileCard = () => {
   );
 };
 const HeroSection = () => {
-  return <div id="home" className="min-h-screen w-full relative flex items-center justify-center sm:p-6 lg:p-8">
+  return <section id="home" className="min-h-screen w-full relative flex items-center justify-center sm:p-6 lg:p-8">
 
     <div className="container mx-auto max-w-7xl relative z-10">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 xl:gap-16 items-center">
-
-        { }
-
         <div className="animate-fade-in-up min-h-screen flex flex-col justify-center">
           <HeroContent /> 
         </div>
-
-        { }
         <div className=" animate-fade-in-up hidden sm:block">
           <CoderProfileCard />
         </div>
-
       </div>
     </div>
-  </div>;
+  </section>;
 };
+
+
+
 export default HeroSection;
 const styles = `
   @keyframes fade-in-up {

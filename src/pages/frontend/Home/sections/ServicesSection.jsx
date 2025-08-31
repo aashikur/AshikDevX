@@ -83,7 +83,7 @@ const ServicesSection = () => {
                     </motion.div>
                 ))}
             </div>
-            
+{/*             
             <motion.div 
                 className="mt-16 text-center"
                 initial={{ opacity: 0, y: 20 }}
@@ -93,7 +93,7 @@ const ServicesSection = () => {
                 <button className="px-8 py-3 rounded-full bg-gradient-to-r from-blue-600 to-violet-600 text-white font-medium hover:from-blue-700 hover:to-violet-700 transition-all duration-300">
                     Start a Project
                 </button>
-            </motion.div>
+            </motion.div> */}
         </Section>
     );
 };

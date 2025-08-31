@@ -1,7 +1,7 @@
 import React from 'react';
 import HeroSection from './sections/HeroSection';
 import AboutGrid from './sections/AboutGrid';
-import MyStory from '@/pages/frontend/Home/sections/AboutMeSection';
+import AboutMeSection from '@/pages/frontend/Home/sections/AboutMeSection';
 import FeaturedProjects from './sections/FeaturedProjects';
 import CTAGetInTouch from './sections/CTAGetInTouch';
 import Reviews from './sections/Reviews';
@@ -13,69 +13,29 @@ import JoinWhatsappCTA from './sections/JoinWhatsappCTA';
 import Section from '@/components/ui/Section';
 import ServicesSection from './sections/ServicesSection';
 import ProcessSection from './sections/ProcessSection';
+import BackgroundGrid from '@/components/ui/BackgroundGrid';
+import BackgroundGrid2 from '@/components/ui/BackgroundGrid2';
 
 const Home = () => {
   return (
-    <div className='bg-[#000000]'>
+    <div
+    
+    >
+
 
       <HeroSection />
- 
-
-      {/* <Marquee1 /> */}
-        <MyStory></MyStory>
-        {/* <AboutGrid></AboutGrid> */}
-
-
-        <ServicesSection></ServicesSection>
-      <div>
-        <FeaturedProjects />
-      </div>
-
-      <ProcessSection/>
-      {/* <AboutGrid></AboutGrid> */}
-      {/* <div>
-              <Marque></Marque>
-            </div> */}
-      {/* <div> <HeroSection></HeroSection>  </div> */}
-      <div>
-
-        {/* <BlogPreviewSection/> */}
-
-
-        {/* <PricingSection></PricingSection> */}
-        <PricingSection2></PricingSection2>
-
-        <JoinWhatsappCTA></JoinWhatsappCTA>
-        <TechStack />
-        <div className='py-5'></div>
-        <Marquee2 />
-
-
-        <Reviews></Reviews>
-
-
-        <CTAGetInTouch></CTAGetInTouch>
-
- 
+      <AboutMeSection></AboutMeSection>
+      <ServicesSection></ServicesSection>
+      <FeaturedProjects />
+      <ProcessSection />
+      <PricingSection2></PricingSection2>
+      <JoinWhatsappCTA></JoinWhatsappCTA>
+      <TechStack />
+      <Reviews></Reviews>
+      <CTAGetInTouch></CTAGetInTouch>
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      </div>
     </div>
   );
 };
