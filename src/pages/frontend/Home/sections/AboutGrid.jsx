@@ -3,7 +3,7 @@
 import AboutMarque from "@/components/frontend/About/AboutMarque";
 import { MoveRight } from "lucide-react";
 import React from "react";
-import WorkTogether from "../../About/sections/WorkTogether";
+import WorkTogether from "./WorkTogether";
 import Global from "./Global";
 
 // Simple icon placeholder

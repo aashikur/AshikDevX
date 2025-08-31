@@ -1,5 +1,7 @@
 "use client";
 
+import Button from "@/components/ui/Button";
+
 const GithubIcon = () => <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
     <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.91 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
 </svg>;
@@ -12,8 +14,8 @@ const TwitterIcon = () => <svg xmlns="http://www.w3.org/2000/svg" width="24" hei
 const ArrowRightIcon = () => <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
     <path d="M14.449 13.5h-13.449v-3h13.449l-4.449-4.449 2.121-2.121 7.879 7.879-7.879 7.879-2.121-2.121z" />
 </svg>;
-export default function MyStory() {
-    return <div className="hero-card border-none rounded-xl p-8 md:p-12 shadow-sm border transition-transform duration-300 ease-[cubic-bezier(0.34,1.56,0.64,1)] hover:-translate-y-1 hover:shadow-xl max-w-[1400px] mx-auto">
+export default function AboutMeSection() {
+    return <div id='aboutMeSection' className="scroll-mt-navbar hero-card border-none rounded-xl p-8 md:p-12 shadow-sm border transition-transform duration-300 ease-[cubic-bezier(0.34,1.56,0.64,1)] hover:-translate-y-1 hover:shadow-xl max-w-[1400px] mx-auto">
         <div className="flex flex-col md:flex-row gap-12">
             { }
             <div className="md:w-2/3">
@@ -25,16 +27,19 @@ export default function MyStory() {
                     I craft <span className="relative inline-block font-medium after:content-[''] after:absolute after:w-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-slate-900 dark:after:bg-slate-100 after:transition-all after:duration-300 hover:after:w-full">digital experiences</span> <br /> with purpose.
                 </h1>
                 <p className="text-gray-600 dark:text-gray-300 mb-8 max-w-2xl leading-relaxed">
-                    I am Ashik, a passionate Web Designer and Developer with a strong expertise in WordPress Theme Development as well as theme customization. Additionally, I have a basic understanding of Graphic Design and Video Editing. <br/> <br/>
+                   Hi, I’m Ashik — a Full-Stack Web Developer who helps businesses and entrepreneurs turn complex ideas into seamless digital experiences. <br/> <br/>
 
-                    Currently, I'm in the process of completing my BSc in Computer Science Engineering. This academic journey has allowed me to constantly push my limits and broaden my knowledge in the dynamic field of IT technology. Alongside my studies, I nurture a keen interest in competitive programming, which fuels my drive to continuously learn and master new technologies.
+                   I build scalable, user-friendly, and conversion-focused applications that don’t just look good, but work hard for your business. Whether it’s fixing slow, outdated websites, automating workflows that drain your time, or creating platforms that turn visitors into loyal customers — <span className="font-semibold">I focus on solving the problems that matter most.</span>
+
+                    <br /> <br/>
+                    I also bring strong experience in CMS like WordPress theme development and customization, giving me the flexibility to deliver solutions for projects of every size — from startups to established brands.
                     {/* <span className="font-medium text-gray-800 dark:text-gray-200"> Sera UI</span>. */}
                 </p>
-                <div className="flex flex-wrap gap-3 mb-10">
-              <a href="#" className="btn btn-dark px-5 py-2.5 rounded-lg text-sm font-medium bg-slate-900 dark:bg-slate-100 text-white dark:text-black border border-slate-200 dark:border-slate-700 transition-colors hover:bg-slate-800 dark:hover:bg-slate-200">View Projects</a>
-              <a href="#" className="btn btn-light px-5 py-2.5 text-sm font-medium text-gray-900 dark:text-white flex items-center gap-2 border border-slate-200 dark:border-slate-700 rounded-lg transition-colors hover:bg-slate-900 hover:text-white dark:hover:bg-slate-100 dark:hover:text-black">
-                Contact Me <ArrowRightIcon />
-              </a>
+                <div className="flex  gap-3 mb-10">
+              <Button href="#" className="btn btn-dark inline-block px-5 py-2.5  text-sm dark:hover:bg-slate-200">View Projects</Button>
+              <Button variant="outline" href="#" className="btn btn-light  px-5 py-2.5 text-sm">
+                Book a Call <ArrowRightIcon />
+              </Button>
             </div>
                 <div className="flex items-center gap-4">
                     <p className="text-sm text-gray-500 dark:text-gray-400">Connect:</p>

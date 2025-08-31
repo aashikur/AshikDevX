@@ -1,6 +1,6 @@
 import { useRouteError } from "react-router";
 import Header from "../components/Header";
-import PortfolioNavbar from "@/components/common/Navbar";
+import PortfolioNavbar from "@/components/layout/Navbar";
 
 const Error = () => {
   const error = useRouteError();

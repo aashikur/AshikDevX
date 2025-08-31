@@ -1,10 +1,10 @@
 import React from 'react';
 
-const LeftLogo = () => {
+const NavSideLogo = () => {
     return (
-        <div>
-            {/* ✅ Logo Section */}
-            <div className='px-3 flex items-center gap-2 p-1  justify-self-start rounded-full bg-black/10 backdrop-blur-[50px] '>
+      <div className="relative border max-w-[1400px]  mx-auto z-50 ">
+        <div className="fixed left-10 top-8 z-50">
+            <div className='px-3  flex items-center gap-2 p-1  justify-self-start rounded-full bg-black/10 backdrop-blur-[50px] '>
                 <img
                     width={40}
                     className='rounded-full'
@@ -20,7 +20,12 @@ const LeftLogo = () => {
             </div>
 
         </div>
+      </div>
     );
 };
 
-export default LeftLogo; {/* ✅ Logo Section */ }
+export default NavSideLogo; {/* ✅ Logo Section */ }
+
+
+
+

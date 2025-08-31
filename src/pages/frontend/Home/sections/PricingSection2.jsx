@@ -1,13 +1,14 @@
-// src/components/PricingSection2.jsx
 import React, { useState } from "react";
 import pricingData from "@/data/PricingServiceData.json";
 import SectionTitle from "@/components/ui/SectionTitle";
+import Section from "@/components/ui/Section";
+import Button from "@/components/ui/Button";
 
 // A simple checkmark icon component for the feature list
 const CheckIcon = () => (
   <svg
-    className="flex-shrink-0 w-6 h-6 text-indigo-500"
-    xmlns="http://www.w.org/2000/svg"
+    className="flex-shrink-0 w-6 h-6 text-blue-500"
+    xmlns="http://www.w3.org/2000/svg"
     fill="none"
     viewBox="0 0 24"
     stroke="currentColor"
@@ -22,16 +23,14 @@ const CheckIcon = () => (
   </svg>
 );
 
-
-// --- MODIFICATION START: New Segmented Control Toggle ---
 const CurrencyToggle = ({ currencyType, setCurrencyType }) => {
   return (
     <div className="flex p-1 space-x-1 bg-gray-200 dark:bg-gray-700/80 rounded-full">
       <button
         onClick={() => setCurrencyType("international")}
-        className={`px-5 py-1.5 rounded-full text-sm font-semibold transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900 ${
+        className={`px-5 py-1.5 rounded-full text-sm font-semibold transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900 ${
           currencyType === "international"
-            ? "bg-white dark:bg-gray-900 text-indigo-600 dark:text-white shadow"
+            ? "bg-white dark:bg-gray-900 text-blue-600 dark:text-white shadow"
             : "text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200"
         }`}
       >
@@ -39,9 +38,9 @@ const CurrencyToggle = ({ currencyType, setCurrencyType }) => {
       </button>
       <button
         onClick={() => setCurrencyType("local")}
-        className={`px-5 py-1.5 rounded-full text-sm font-semibold transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900 ${
+        className={`px-5 py-1.5 rounded-full text-sm font-semibold transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900 ${
           currencyType === "local"
-            ? "bg-white dark:bg-gray-900 text-indigo-600 dark:text-white shadow"
+            ? "bg-white dark:bg-gray-900 text-blue-600 dark:text-white shadow"
             : "text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200"
         }`}
       >
@@ -50,8 +49,8 @@ const CurrencyToggle = ({ currencyType, setCurrencyType }) => {
     </div>
   );
 };
-// --- MODIFICATION END ---
-const PricingSection2 = () => {
+
+const PricingSection = () => {
   const [currencyType, setCurrencyType] = useState("international"); // 'international' or 'local'
   const [activeCategory, setActiveCategory] = useState(
     pricingData.categories[0].id
@@ -62,16 +61,15 @@ const PricingSection2 = () => {
   );
 
   return (
-    <div className="py-16 bg-gray-50 sm:py-24 dark:bg-gray-900">
+    <Section
+      title={'Flexible Pricing'}
+      subtitle={''}
+      description={'Think of it not as paying for a website — but investing in your brand’s growth'}
+      id="pricingSection" 
+      className="scroll-mt-20 py-16 bg-gray-50 sm:py-24 dark:bg-gray-900"
+    >
       <div className="max-w-[1500px] mx-auto px-4 sm:px-6 lg:px-8">
-        <SectionTitle
-          title="Flexible Pricing for Every Need"
-          subtitle="Choose a plan that works for you. All plans are fully customizable to fit your project requirements."
-        />
-
-        {/* --- MODIFICATION START: Redesigned Controls --- */}
         <div className="flex flex-col items-center justify-center gap-8 mb-12 md:flex-row md:justify-between">
-          {/* New Currency Toggle */}
           <div className="w-full md:w-auto flex justify-center md:justify-start">
             <CurrencyToggle
               currencyType={currencyType}
@@ -79,15 +77,14 @@ const PricingSection2 = () => {
             />
           </div>
 
-          {/* New Category Navigation */}
           <div className="flex flex-wrap justify-center p-1.5 bg-gray-200/70 dark:bg-gray-800/70 rounded-full">
             {pricingData.categories.map((category) => (
               <button
                 key={category.id}
                 onClick={() => setActiveCategory(category.id)}
-                className={`px-4 sm:px-6 py-2 text-sm font-medium rounded-full transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900 ${
+                className={`px-4 sm:px-6 py-2 text-sm font-medium rounded-full transition-all duration-300 ease-in-out focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900 ${
                   activeCategory === category.id
-                    ? "bg-indigo-600 text-white shadow-md"
+                    ? "bg-blue-600 text-white shadow-md"
                     : "bg-transparent text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-white"
                 }`}
               >
@@ -95,24 +92,21 @@ const PricingSection2 = () => {
               </button>
             ))}
           </div>
-           {/* Add a spacer for large screens to balance the layout */}
-           <div className="hidden md:block w-28"></div>
+          <div className="hidden md:block w-28"></div>
         </div>
-        {/* --- MODIFICATION END --- */}
 
-        {/* Pricing Table */}
         <div className="grid max-w-md grid-cols-1 gap-8 mx-auto lg:max-w-none lg:grid-cols-3">
           {currentCategory?.packages.map((pkg) => (
             <div
               key={pkg.id}
               className={`relative flex flex-col p-8 transition-all duration-300 bg-white dark:bg-gray-800 border rounded-2xl shadow-lg h-[42rem] ${
                 pkg.mostPopular
-                  ? "border-2 border-indigo-600 transform lg:scale-105"
+                  ? "border-2 border-blue-600 transform lg:scale-105"
                   : "border-gray-200 dark:border-gray-700"
               }`}
             >
               {pkg.mostPopular && (
-                <div className="absolute top-0 px-4 py-1 text-xs font-semibold tracking-wide text-white uppercase transform -translate-y-1/2 bg-indigo-600 rounded-full">
+                <div className="absolute top-0 px-4 py-1 text-xs font-semibold tracking-wide text-white uppercase transform -translate-y-1/2 bg-blue-600 rounded-full">
                   Most Popular
                 </div>
               )}
@@ -147,23 +141,19 @@ const PricingSection2 = () => {
               </div>
               
               <div className="mt-8">
-                <a
-                  href={`/get-started?package=${pkg.id}`}
-                  className={`block w-full px-6 py-3 text-sm font-semibold text-center rounded-lg transition-colors ${
-                    pkg.mostPopular
-                      ? "bg-indigo-600 text-white hover:bg-indigo-700"
-                      : "bg-indigo-50 text-indigo-700 hover:bg-indigo-100 dark:bg-indigo-500/10 dark:text-indigo-400 dark:hover:bg-indigo-500/20"
-                  }`}
+                <Button
+                  variant={`${pkg.mostPopular ? "primary" : "secondary"}`}
+                  className="w-full text-sm"
                 >
                   Choose Plan
-                </a>
+                </Button>
               </div>
             </div>
           ))}
         </div>
       </div>
-    </div>
+    </Section>
   );
 };
 
-export default PricingSection2;
+export default PricingSection;

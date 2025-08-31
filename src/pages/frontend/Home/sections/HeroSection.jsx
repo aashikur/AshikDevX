@@ -18,7 +18,7 @@ const coderData = {
 };
 const CoderProfileCard = () => {
   return (
-    <div className="w-full mx-auto bg-gradient-to-r from-zinc-100 to-zinc-200 dark:from-[#000000] dark:to-[#0a0d37] border-zinc-300 dark:border-[#1b2c68a0] relative rounded-lg border shadow-lg">
+    <div id="heroSection" className="w-full mx-auto bg-gradient-to-r from-zinc-100 to-zinc-200 dark:from-[#000000] dark:to-[#0a0d37] border-zinc-300 dark:border-[#1b2c68a0] relative rounded-lg border shadow-lg">
 
       { }
       <div className="flex flex-row">
@@ -111,15 +111,9 @@ const CoderProfileCard = () => {
     </div>
   );
 };
-const HeroSection2 = () => {
+const HeroSection = () => {
   return <div id="home" className="min-h-screen w-full relative flex items-center justify-center sm:p-6 lg:p-8">
-    { }
 
-
-    { }
-
-
-    { }
     <div className="container mx-auto max-w-7xl relative z-10">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 xl:gap-16 items-center">
 
@@ -138,7 +132,7 @@ const HeroSection2 = () => {
     </div>
   </div>;
 };
-export default HeroSection2;
+export default HeroSection;
 const styles = `
   @keyframes fade-in-up {
     from {

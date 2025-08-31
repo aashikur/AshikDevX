@@ -30,3 +30,31 @@ body {
 a.active span {
   @apply text-white;
 }
+
+@keyframes text-shimmer {
+  0% { background-position: 0% 50% }
+  100% { background-position: 100% 50% }
+}
+
+.animate-text-shimmer {
+  animation: text-shimmer 2s ease infinite;
+  background-size: 200% auto;
+}
+
+
+@keyframes glow {
+    0% { opacity: 0.5; }
+    50% { opacity: 1; }
+    100% { opacity: 0.5; }
+}
+
+.glow-effect {
+    animation: glow 2s ease-in-out infinite;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.scroll-mt-navbar {
+  scroll-margin-top: 4rem; /* equals 64px */
+}

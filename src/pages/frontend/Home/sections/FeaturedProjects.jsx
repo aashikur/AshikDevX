@@ -7,6 +7,7 @@ import { FaReact } from "react-icons/fa"; // React icon from react-icons
 import React, { useEffect, useState } from 'react'; // React core imports
 import MyBadge from '@/components/ui/MyBadge'; // Custom badge component
 import projectsData from '@/data/projectsData'; // Data containing all projects info
+import Section from '@/components/ui/Section';
 
 // FeaturedProjects component: displays a list of projects in a styled layout
 const FeaturedProjects = () => {
@@ -52,9 +53,13 @@ const FeaturedProjects = () => {
 
   return (
     // Main container
-    <div className='max-w-[1400px] mx-auto py-20 md:p-8 relative '>
+    <Section 
+    subtitle={'My recent works'}
+    title={"Featured Projects"}
+    description={"A section of my most impactful work across various industries and technology"}
+    id="projectsSection" className='scroll-mt-20 max-w-[1400px] mx-auto py-20 md:p-8 relative '>
       {/* Section title component */}
-      <SectionTitle></SectionTitle>
+      {/* <SectionTitle></SectionTitle> */}
 
       {/* Map over projects data and display each project */}
       {
@@ -136,7 +141,7 @@ const FeaturedProjects = () => {
           </div>
         </div>)
       }
-    </div>
+    </Section>
   );
 };
 

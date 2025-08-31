@@ -1,4 +1,5 @@
 // src/components/CTAGetInTouch.jsx
+import Section from '@/components/ui/Section';
 import { ArrowRight } from 'lucide-react';
 import React, { useRef, useState } from 'react';
 
@@ -59,7 +60,7 @@ const MagneticButton = ({ children }) => {
  */
 const CTAGetInTouch = () => {
     return (
-        <section className=" py-24 sm:py-32">
+        <Section id='contactSection' className="scroll-mt-20 py-24 sm:py-32">
             <div className="mx-auto max-w-2xl px-4 text-center sm:px-6 lg:px-8">
                 <div className="flex flex-col items-center gap-y-8">
                     <img
@@ -89,7 +90,7 @@ const CTAGetInTouch = () => {
                     </div>
                 </div>
             </div>
-        </section>
+        </Section>
     );
 };
 

@@ -21,8 +21,11 @@ const Button = ({
       transition-all duration-300
     `,
     secondary: `
-      bg-gray-200 hover:bg-gray-300 text-gray-800
-      dark:bg-gray-700 dark:hover:bg-gray-600 dark:text-gray-100
+      relative inline-flex items-center justify-center
+      text-white font-semibold rounded-full
+      bg-blue-500/20 
+      hover:shadow-[0_0_20px_rgba(59,130,246,0.3)]
+      transition-all duration-300
     `,
     outline: `
      px-6 flex gap-x-2 w-42 justify-center group py-3 bg-transparent hover:bg-gray-100 dark:hover:bg-gray-800 border border-gray-300 dark:border-gray-600 text-gray-900 dark:text-white  

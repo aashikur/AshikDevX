@@ -1,8 +1,7 @@
 import { Outlet } from "react-router";
-import Navbar from "../components/common/Navbar";
-import Footer from "@/components/common/Footer";
-import Navbar2 from "@/components/common/Navbar2";
-import LeftLogo from "@/components/common/LeftLogo";
+import Footer from "@/components/layout/Footer";
+import Navbar2 from "@/components/layout/Navbar";
+import NavSideLogo from "@/components/layout/NavSideLogo";
 import ToggleLightDark from "@/.reuse/ToggleLightDark";
 
 const RootLayout = () => {
@@ -18,27 +17,15 @@ const RootLayout = () => {
         backgroundSize: "100px 100px, 100px 100px, 100% 100%",
       }}
     >
-      <div
-        className="absolute  z-0"
 
-      />
-
-      <div className="relative border max-w-[1400px] mx-auto z-50 ">
-        <div className="fixed left-10 top-8 z-50">
-          <LeftLogo />
-        </div>
-      </div>
-
-      <div className="relative border max-w-[1400px] mx-auto z-50">
-        <div className="fixed  right-10 top-8 z-50">
-          <ToggleLightDark />
-        </div>
-      </div>
+     {/* <Navbar/> */}
 
 
-
-      {/* <Navbar/> */}
+      <NavSideLogo />
+      
+ 
       <Navbar2 />
+
       <main className="overflow-x-clip">
         <Outlet></Outlet>
       </main>

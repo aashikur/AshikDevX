@@ -96,7 +96,7 @@ const ReviewCard = ({ review }) => {
 
 const Reviews = () => {
   return (
-    <section className="bg-[#121212] py-20 sm:py-24">
+    <section id="reviewsSection" className="bg-[#121212] py-20 sm:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         
         {/* Section Header */}
