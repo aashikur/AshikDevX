@@ -1,22 +1,20 @@
 "use client";
 
 import Button from "@/components/ui/Button";
-import ButtonMix from "@/components/ui/ButtonMix";
-import Card from "@/components/ui/Card";
 import { ArrowUpToLine, Download } from "lucide-react";
 import React from "react";
-import { FaLocationArrow } from "react-icons/fa";
 import { FaArrowUpLong } from "react-icons/fa6";
+import HeroContent from "./HeroContent";
 
 const DotIcon = () => <svg width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
   <circle cx="4" cy="4" r="4" fill="currentColor" />
 </svg>;
 const coderData = {
-  name: 'Md Ashikur Rahaman',
-  role: 'Frontend Developer',
+  name: 'Ashikur Rahaman',
+  role: 'Full-Stack Developer',
   seniority: 'Mid-Level',
   location: 'Bangladesh',
-  skills: ['React', 'Next.js', 'JavaScript', 'TypeScript', 'TailwindCSS', 'CSS', 'Figma', 'GitHub', 'HTML', 'Astro', 'Node.js', 'Express', 'MongoDB', 'Firebase', 'Git']
+  skills: ['React', 'Next.js', 'JavaScript', 'TypeScript', 'TailwindCSS', 'CSS', 'Figma', 'GitHub', 'HTML', 'Astro', 'Node.js', 'Express', 'MongoDB', 'Firebase', 'Git', '...']
 };
 const CoderProfileCard = () => {
   return (
@@ -114,70 +112,25 @@ const CoderProfileCard = () => {
   );
 };
 const HeroSection2 = () => {
-  return <div id="home" className="min-h-screen w-full relative flex items-center justify-center font-sans p-4 sm:p-6 lg:p-8">
+  return <div id="home" className="min-h-screen w-full relative flex items-center justify-center sm:p-6 lg:p-8">
     { }
-    <div className="absolute inset-0 z-0 dark:hidden" style={{
-      background: "radial-gradient(125% 125% at 50% 100%, #ffffff 40%, #3b82f6 100%)"
-    }} />
+
 
     { }
-    <div className="absolute inset-0 z-0 hidden dark:block" style={{
-      background: "radial-gradient(125% 125% at 50% 100%, #000000 40%, #010133 100%)"
-    }} />
+
 
     { }
     <div className="container mx-auto max-w-7xl relative z-10">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 xl:gap-16 items-center">
 
         { }
-        <div className="flex pt-30 md:pt-0 flex-col gap-4 sm:gap-6 items-start text-left  animate-fade-in-up">
-          <div className="inline-flex mx-auto sm:mx-0 items-center gap-2 px-3 py-1 bg-gray-900/80 dark:bg-white/10 border border-gray-700 dark:border-gray-600 rounded-full text-xs sm:text-sm text-gray-200 dark:text-gray-300 backdrop-blur-sm hover:bg-gray-800 dark:hover:bg-white/20 transition-all duration-300">
-            <DotIcon />
-            Welcome to my universe
-          </div>
 
-          <div className="relative">
-            <h1 className="text-6xl text-center sm:text-left sm:text-4xl md:text-5xl lg:text-5xl xl:text-6xl font-bold leading-tight text-gray-900 dark:text-white">
-              {/* Hello <br />
-                    I&apos;m{' '} */}
-              <span className="bg-gradient-to-r">
-                Full-Stack Developer
-              </span> <br />
-              & Creative {' '}
-              <span className="">
-                Coder
-              </span>
-            </h1>
-          </div>
-
-
-          <p className="text-gray-600 dark:text-gray-300 text-base sm:text-lg lg:text-xl max-w-lg leading-relaxed">
-            JavaScript lover 🖋️ | MERN Stact  ⚡ | Crafting frameworks and coding the future ✨
-          </p>
-
-          <div className="flex flex-row gap-3 sm:gap-4 mt-4 sm:mt-6 w-full sm:w-auto">
-            <Button className="">
-              Learn More
-              <FaArrowUpLong className="rotate-45 group-hover:rotate-55 group-hover:scale-125 transition-all duration-300" />
-
-            </Button>
-
-            <Button variant="outline">
-              <a target="_blank" className="flex items-center gap-2" href="/AshikurRahamanResume.pdf">
-                Get Resume
-                <Download className="group-hover:scale-125 transition-all duration-300" size={18} />
-              </a>
-            </Button>
-          </div>
-
-
-          {/* Test  */}
-
-
+        <div className="animate-fade-in-up min-h-screen flex flex-col justify-center">
+          <HeroContent /> 
         </div>
 
         { }
-        <div className=" animate-fade-in-up">
+        <div className=" animate-fade-in-up hidden sm:block">
           <CoderProfileCard />
         </div>
 

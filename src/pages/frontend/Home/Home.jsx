@@ -13,12 +13,13 @@ import JoinWhatsappCTA from './sections/JoinWhatsappCTA';
 import Navbar2 from '@/components/common/Navbar2';
 import AboutMarque from '@/components/frontend/About/AboutMarque';
 import Section from '@/components/ui/Section';
+import HeroSection from './sections/HeroContent';
 
 const Home = () => {
   return (
     <div className='bg-[#000000]'>
       <div
-        className="absolute inset-0 z-0"
+        className="absolute inset-0 z-0 blur-[1px]"
         style={{
           background: "#020617",
           backgroundImage: `
@@ -26,10 +27,11 @@ const Home = () => {
         linear-gradient(to bottom, rgba(71,85,105,0.3) 1px, transparent 1px),
         radial-gradient(circle at 50% 50%, rgba(139,92,246,0.15) 0%, transparent 70%)
       `,
-          backgroundSize: "32px 32px, 32px 32px, 100% 100%",
+          backgroundSize: "100px 100px, 100px 100px, 100% 100%",
         }}
       />
       <AboutMeSection />
+      <HeroSection></HeroSection>
  
       <div className="py-5"></div>
       <Marquee1 />
