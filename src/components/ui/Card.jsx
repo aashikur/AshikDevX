@@ -14,7 +14,7 @@ const Card = ({
       bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 
       border border-gray-700
       shadow-lg hover:shadow-[0_0_30px_rgba(59,130,246,0.4)]
-      transition-all duration-300
+      transition-all duration-300 
     `,
     2: `
       p-6 rounded-xl 

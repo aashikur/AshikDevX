@@ -3,12 +3,13 @@ import MyBadge from '@/components/ui/MyBadge';
 import SectionTitle from '@/components/ui/SectionTitle';
 import React from 'react';
 import MarqueData from "@/data/MarqueData";
+import Section from '@/components/ui/Section';
 const TechStack = () => {
     
 console.log( "TEST LIBEARY",MarqueData)
     
     return (
-        <div>
+        <Section>
             <SectionTitle 
             badge='MY SKILLS'
             title='The Secret'
@@ -22,7 +23,7 @@ console.log( "TEST LIBEARY",MarqueData)
             ))}
       
             </div>
-        </div>
+        </Section>
     );
 };
 

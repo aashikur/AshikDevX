@@ -15,13 +15,13 @@ const Section = ({
   return (
     <section
       id={id}
-      className={`w-full py-12 md:py-20   border my-1 ${className}`}
+      className={`w-full py-12 md:py-20 my-1 ${className}`}
     >
       <div className={`max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 ${containerClass}`}>
         {/* Section Header */}
         {(title || subtitle || description) && (
           <div
-            className={`mb-10 ${centered ? "text-center" : "text-left"}`}
+            className={`mb-15 ${centered ? "text-center" : "text-left"}`}
           >
             {subtitle && (
               <p className="text-sm font-semibold text-blue-500 uppercase tracking-wide mb-2">

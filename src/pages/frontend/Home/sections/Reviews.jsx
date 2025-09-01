@@ -1,6 +1,8 @@
 // src/components/Reviews.jsx
 import React from 'react';
 import { Star, CheckCircle2 } from 'lucide-react';
+import Section from '@/components/ui/Section';
+import Card from '@/components/ui/Card';
 
 // --- FAKE DATA ---
 // This data is self-contained within the component file as requested.
@@ -23,7 +25,7 @@ const reviewsData = [
     reviewText: "High performing landing page for our email campaign that perfectly balanced technical detail with user friendly design. The mobile optimization and smooth navigation truly enhanced engagement.",
     rating: 5,
     isVerified: true,
-    highlight: true, // This card will have the purple border
+    highlight: true, // This card will have the blue border
   },
   {
     id: 3,
@@ -53,8 +55,8 @@ const StarRating = ({ rating }) => {
 // ReviewCard Component: Renders a single testimonial card.
 const ReviewCard = ({ review }) => {
   return (
-    <div
-      className={`flex transition-all duration-300 hover:-translate-y-0.5 ease-in-out hover:border-purple-500/80 h-full flex-col border-gray-700/40 justify-between rounded-2xl border bg-[#1C1C1E] p-8`}
+    <Card
+      className={`flex transition-all duration-300 hover:-translate-y-0.5 ease-in-out hover:border-blue-500/80 h-full flex-col border-gray-700/40 justify-between rounded-2xl border bg-[#1C1C1E] p-8`}
     >
       <div className="flex-grow">
         {/* Header */}
@@ -87,7 +89,7 @@ const ReviewCard = ({ review }) => {
           )}
         </div>
       </div>
-    </div>
+    </Card>
   );
 };
 
@@ -96,17 +98,18 @@ const ReviewCard = ({ review }) => {
 
 const Reviews = () => {
   return (
-    <section id="reviewsSection" className="bg-[#121212] py-20 sm:py-24">
+    <Section
+      title="What Our Clients Say"
+      description="Real feedback from people who have experienced our services. "
+      id="reviewsSection" className="py-20 sm:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        
+
         {/* Section Header */}
         <div className="text-center mb-16">
-            <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-                What Our Clients Say
-            </h2>
-            <p className="mt-4 text-lg text-gray-400">
-                Real feedback from people who have experienced our services.
-            </p>
+          <h2 className="text-3xl font-bold tracking-tight text-white sm:text-4xl">
+          </h2>
+          <p className="mt-4 text-lg text-gray-400">
+          </p>
         </div>
 
         {/* Reviews Grid */}
@@ -116,7 +119,7 @@ const Reviews = () => {
           ))}
         </div>
       </div>
-    </section>
+    </Section>
   );
 };
 

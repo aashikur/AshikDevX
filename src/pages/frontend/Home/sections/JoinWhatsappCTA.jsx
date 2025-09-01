@@ -1,4 +1,6 @@
 // src/components/JoinWhatsappCTA.jsx
+import Card from '@/components/ui/Card';
+import Section from '@/components/ui/Section';
 import { ArrowRight } from 'lucide-react';
 import React from 'react';
 
@@ -8,14 +10,14 @@ const JoinWhatsappCTA = () => {
     const whatsappGroupLink = "https://wa.me/8801580563883";
 
     return (
-        <section className="bg-black p-4 sm:p-8">
-            <div className="mx-auto max-w-6xl rounded-3xl bg-[#1C1C1E] p-8 sm:p-12">
+        <Section className="p-4 sm:p-8">
+            <Card className="mx-auto max-w-6xl rounded-3xl  p-8 sm:p-12">
                 <div className="flex flex-col items-center justify-between gap-8 md:flex-row">
                     
                     {/* Text Content */}
                     <div className="max-w-xl text-center md:text-left">
                         <h2 className="text-3xl font-bold text-white sm:text-4xl">
-                            Join <span className="text-purple-500">WhatsApp Group</span>
+                            Join <span className="text-blue-500">WhatsApp Group</span>
                         </h2>
                         <p className="mt-4 text-base leading-relaxed text-gray-400">
                             Stay connected with the latest updates, tutorials, and project announcements by joining our official WhatsApp group.
@@ -39,8 +41,8 @@ const JoinWhatsappCTA = () => {
                     </div>
 
                 </div>
-            </div>
-        </section>
+            </Card>
+        </Section>
     );
 };
 

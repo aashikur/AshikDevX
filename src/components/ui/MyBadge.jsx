@@ -2,11 +2,11 @@ import React from 'react';
 import { IconLibrary } from '../icons/IconLibrary';
 
 const MyBadge = ({
-    text = 'My works', icon = null, iconKey = null, display = '1'
+    text = 'My works', icon = null, iconKey = null, display = '1' , className
 }) => {
 
     return (
-        <div>
+        <div className={className}>
             {display == '1' &&
                 <button className="
                 transition-all duration-300 ease-[cubic-bezier(0.34,1.56,0.64,1)] hover:-translate-y-1 hover:shadow-xl

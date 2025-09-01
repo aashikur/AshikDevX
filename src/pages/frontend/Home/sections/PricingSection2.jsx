@@ -66,7 +66,7 @@ const PricingSection = () => {
       subtitle={''}
       description={'Think of it not as paying for a website — but investing in your brand’s growth'}
       id="pricingSection" 
-      className="scroll-mt-20 py-16 bg-gray-50 sm:py-24 dark:bg-gray-900"
+      className="scroll-mt-20 py-16  sm:py-24 "
     >
       <div className="max-w-[1500px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center justify-center gap-8 mb-12 md:flex-row md:justify-between">
