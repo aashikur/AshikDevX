@@ -1,8 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 const NavSideLogo = () => {
     return (
-      <div className="relative border max-w-[1400px]  mx-auto z-50 ">
+      <Link to={'/'} className="relative border max-w-[1400px]  mx-auto z-50 ">
         <div className="fixed left-10 top-8 z-50">
             <div className='px-3  flex items-center gap-2 p-1  justify-self-start rounded-full bg-black/10 backdrop-blur-[50px] '>
                 <img
@@ -20,7 +21,7 @@ const NavSideLogo = () => {
             </div>
 
         </div>
-      </div>
+      </Link>
     );
 };
 

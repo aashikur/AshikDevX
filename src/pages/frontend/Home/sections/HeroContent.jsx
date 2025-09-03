@@ -42,12 +42,20 @@ const HeroContent = () => {
             record time using our streamlined workflow and modern tech stack.
           </p>
           <div className="mt-10 flex flex-col sm:flex-row items-center justify-start gap-4">
-            <Button variant="primary" className="w-full sm:w-auto">
+         <a href="#contactSection">
+             <Button variant="primary" className="w-full sm:w-auto">
               Let's Connect
             </Button>
-            <Button variant="outline" className="w-full sm:w-auto">
+         </a>
+           <a 
+           href="/AshikurRahamanResume.pdf"
+           target="_blank"
+           download="Ashikur_Resume.pdf"
+           >
+             <Button variant="outline" className="w-full sm:w-auto">
               Get Resume <Download className="w-4 h-4 ml-2" />
             </Button>
+           </a>
           </div>
         </div>
       </div>
