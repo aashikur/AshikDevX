@@ -83,10 +83,12 @@ const CTAGetInTouch = () => {
                     </p>
 
                     <div className="mt-6">
-                        <MagneticButton className="group">
+                       <a target='_blank' className='**:cursor-pointer' href="https://wa.me/+08801580563883">
+                         <MagneticButton className="group ">
                             <span className='z-10 group-hover:text-white'>GET IN TOUCH</span>
                             <ArrowRight className="text-gray-900 transition-transform duration-300 group-hover:rotate-[-30deg] dark:text-white" size={24} />
                         </MagneticButton>
+                       </a>
                     </div>
                 </div>
             </div>

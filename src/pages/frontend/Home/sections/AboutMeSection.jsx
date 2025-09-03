@@ -41,10 +41,13 @@ export default function AboutMeSection() {
 
                 {/* CTA Buttons */}
                 <div className="flex gap-3 mb-10">
-                    <Button href="#" className="px-5 py-2.5 text-sm">View Projects</Button>
-                    <Button variant="outline" href="#" className="px-5 py-2.5 text-sm">
+                   <a target="_blank" href="https://github.com/aashikur"> <Button className="px-5 py-2.5 text-sm">View Projects</Button></a>
+                  {/* <a href="https://calendly.com/aashikur/30min"> */}
+                  <a href="mailto:mdaashikur@gmail.com" title="mdaashikur@gmail.com">
+                      <Button variant="outline" className="px-5 py-2.5 text-sm">
                         Book a Call <ArrowRightIcon />
                     </Button>
+                  </a>
                 </div>
 
                 {/* Social Links */}
