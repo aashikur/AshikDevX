@@ -11,8 +11,8 @@ const reviewsData = [
     id: 1,
     name: 'Katherine Johnson',
     title: 'Event Coordinator, The Big Retreat Festival',
-    avatar: '/assets/images/avatars/avatar-1.jpg', // Replace with your actual image paths
-    reviewText: "Ashar delivered an exceptional scheduling tool for our festival. The interface was smooth, filters worked flawlessly, and the printable view was a game changer for attendees. His attention to detail and user focused design really stood out.",
+    avatar: '/assets/images/avatars/avatar-1.jpg',
+    reviewText: "Ashik delivered an exceptional scheduling tool for our festival. The interface was smooth, filters worked flawlessly, and the printable view was a game changer for attendees. His attention to detail and user-focused design really stood out.",
     rating: 5,
     isVerified: true,
     highlight: false,
@@ -21,21 +21,41 @@ const reviewsData = [
     id: 2,
     name: 'Michael Reynolds',
     title: 'Marketing Manager, NES Power Systems',
-    avatar: '/assets/images/avatars/avatar-2.jpg', // Replace with your actual image paths
-    reviewText: "High performing landing page for our email campaign that perfectly balanced technical detail with user friendly design. The mobile optimization and smooth navigation truly enhanced engagement.",
+    avatar: '/assets/images/avatars/avatar-2.jpg',
+    reviewText: "High-performing landing page for our email campaign that perfectly balanced technical detail with user-friendly design. The mobile optimization and smooth navigation truly enhanced engagement.",
     rating: 5,
     isVerified: true,
-    highlight: true, // This card will have the blue border
+    highlight: true,
   },
   {
     id: 3,
     name: 'Benjamin Smith',
     title: 'CEO, Manna Bitcoin Wallet',
-    avatar: '/assets/images/avatars/avatar-3.jpg', // Replace with your actual image paths
-    reviewText: "Ashar provided good quality work. He was very fast and knowledgeable. He responded very quickly and was always available. The language barrier was a challenge a few times, but we were able to work around that. I would definitely hire him again.",
+    avatar: '/assets/images/avatars/avatar-3.jpg',
+    reviewText: "Ashik provided good quality work. He was very fast and knowledgeable. He responded quickly and was always available. The language barrier was a challenge a few times, but we were able to work around that. I would definitely hire him again.",
     rating: 5,
     isVerified: true,
     highlight: false,
+  },
+  {
+    id: 4,
+    name: 'Lina Alvarez',
+    title: 'Founder, GreenLeaf E-commerce',
+    avatar: '/assets/images/avatars/avatar-4.jpg',
+    reviewText: "Our MERN-based e-commerce website was delivered ahead of schedule and exceeded expectations. The checkout process is flawless, and the dashboard gives us full control over products and orders. Very impressed with Ashik's expertise!",
+    rating: 5,
+    isVerified: true,
+    highlight: false,
+  },
+  {
+    id: 5,
+    name: 'Rajiv Menon',
+    title: 'Product Manager, TechNova SaaS Solutions',
+    avatar: '/assets/images/avatars/avatar-5.jpg',
+    reviewText: "Ashik built a fully functional SaaS dashboard for our analytics tool. The performance optimization and responsive UI were top-notch. Communication was smooth throughout, and he proactively suggested improvements that made the product stronger.",
+    rating: 5,
+    isVerified: true,
+    highlight: true,
   },
 ];
 
