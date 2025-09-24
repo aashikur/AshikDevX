@@ -1,83 +1,85 @@
 {
   "categories": [
+{
+  "id": "web-development",
+  "name": "Web Development",
+  "packages": [
     {
-      "id": "web-development",
-      "name": "Web Development",
-      "packages": [
-        {
-          "id": "web-dev-basic",
-          "title": "Basic Development",
-          "description": "Development for simple websites",
-          "features": [
-            "Single page website (HTML/CSS/JS)",
-            "Fully mobile responsive development",
-            "Basic contact form with email functionality",
-            "SEO friendly structure (Semantic HTML)",
-            "Basic animations (CSS transitions)",
-            "Social media integration",
-            "Basic security setup (HTTPS, form validation)",
-            "Cross browser compatibility testing",
-            "10 days bug fixing support",
-            "Delivery in 1 day"
-          ],
-          "price": {
-            "international": "$139/project",
-            "local": "৳15,000/project"
-          },
-          "mostPopular": false
-        },
-        {
-          "id": "web-dev-standard",
-          "title": "Standard Development",
-          "description": "Advanced development for services websites",
-          "features": [
-            "Everything in Basic Development",
-            "Up to 6 pages with dynamic content",
-            "Interactive elements (Sliders, tabs, accordions)",
-            "API integrations (Google Maps, social media)",
-            "Advanced animations (GSAP/Scroll-triggered)",
-            "User authentication system",
-            "Database integration (For forms/data)",
-            "Advanced security measures (Firewall setup)",
-            "Performance optimization (Lazy loading, etc.)",
-            "18 days support",
-            "Delivery in 1-2 weeks"
-          ],
-          "price": {
-            "international": "$379/project",
-            "local": "৳40,000/project"
-          },
-          "mostPopular": true
-        },
-        {
-          "id": "web-dev-premium",
-          "title": "Premium Development",
-          "description": "Complex web applications and large sites",
-          "features": [
-            "Everything in Standard Development",
-            "Unlimited pages with complex functionality",
-            "E-commerce functionality (Shopping cart, checkout)",
-            "User accounts system with profiles",
-            "Custom database architecture",
-            "Premium plugins/licenses included",
-            "Multi language support",
-            "Advanced search functionality",
-            "Payment gateway integration (Stripe/PayPal)",
-            "API development (REST/GraphQL)",
-            "Automated email systems",
-            "1 month premium support",
-            "Performance optimization audit",
-            "Delivery in 3-4 weeks",
-            "Technical training sessions"
-          ],
-          "price": {
-            "international": "$899/project",
-            "local": "৳95,000/project"
-          },
-          "mostPopular": false
-        }
-      ]
+      "id": "web-dev-basic",
+      "title": "Basic Development",
+      "description": "Ideal for personal Basic portfolios or small sites.",
+      "features": [
+        "Single page website (HTML/CSS/JS)",
+        "Fully mobile responsive development",
+        "Basic contact form with email functionality",
+        "SEO friendly structure (Semantic HTML)",
+        "Basic animations (CSS transitions)",
+        "Social media integration",
+        "Basic security setup (HTTPS, form validation)",
+        "Cross browser compatibility testing",
+        "10 days bug fixing support",
+        "Delivery in 2-3 days"
+      ],
+      "price": {
+        "international": "$139/project",
+        "local": "৳15,000/project"
+      },
+      "mostPopular": false
     },
+    {
+      "id": "web-dev-standard",
+      "title": "Standard Development",
+      "description": "Advanced development For companies or service websites.",
+      "features": [
+        "Everything in Basic Development",
+        "Up to 6 pages with dynamic content",
+        "Interactive elements (Sliders, tabs, accordions)",
+        "API integrations (Google Maps, Social Media APIs)",
+        "Advanced animations (GSAP / Scroll-triggered)",
+        "User authentication system",
+        "Database integration (for forms/data)",
+        "Advanced security measures (Firewall setup)",
+        "Performance optimization (Lazy loading, etc.)",
+        "18 days support",
+        "Delivery in 1-2 weeks"
+      ],
+      "price": {
+        "international": "$379/project",
+        "local": "৳40,000/project"
+      },
+      "mostPopular": true
+    },
+    {
+      "id": "web-dev-premium",
+      "title": "Premium Development",
+      "description": "For large businesses, e-commerce, and enterprise-level applications.",
+      "features": [
+        "Everything in Standard Development",
+        "Unlimited pages with complex functionality",
+        "E-commerce functionality (Shopping cart, checkout)",
+        "User accounts system with profiles",
+        "Custom database architecture",
+        "Premium plugins/licenses included",
+        "Multi-language support",
+        "Advanced search functionality",
+        "Payment gateway integration (Stripe/PayPal)",
+        "API development (REST/GraphQL)",
+        "Automated email systems",
+        "1 month premium support",
+        "Performance optimization audit",
+        "Delivery in 3-4 weeks (enterprise-level realistic timeline)",
+        "Technical training sessions"
+      ],
+      "price": {
+        "international": "$899/project",
+        "local": "৳95,000/project"
+      },
+      "mostPopular": false
+    }
+  ]
+}
+
+,
     {
       "id": "cms-solutions",
       "name": "CMS Solutions",

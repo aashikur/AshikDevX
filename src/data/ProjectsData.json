@@ -21,7 +21,12 @@
       { "iconKey": "mongodb", "text": "MongoDB" },
       { "iconKey": "vscode", "text": "VS Code" },
       { "iconKey": "git", "text": "Git" }
-    ]
+    ], 
+      "github": {
+          "frontend": "https://github.com/yourusername/auctiong-frontend",
+          "backend": "https://github.com/yourusername/auctiong-backend"
+  },
+  "live": "https://auctiong-live-url.com"
   },
   {
     "id": 2,
@@ -44,7 +49,12 @@
       { "iconKey": "mongodb", "text": "MongoDB" },
       { "iconKey": "vscode", "text": "VS Code" },
       { "iconKey": "git", "text": "Git" }
-    ]
+    ],
+      "github": {
+         "frontend": "https://github.com/yourusername/auctiong-frontend",
+         "backend": "https://github.com/yourusername/auctiong-backend"
+  },
+  "live": "https://auctiong-live-url.com"
   }
   
 ]
