@@ -199,7 +199,7 @@ export default function AboutMarque() {
                     </div>
                 </div>
 
-                <div className="p-20 group  hover:shadow-xl translate-y-10">
+                <div className="p-20 group hidden hover:shadow-xl translate-y-10">
                     {/* X Organizations Black Background with Top Glow */}
                     {/* <div
                         className="absolute inset-0 z-0 opacity-80"
