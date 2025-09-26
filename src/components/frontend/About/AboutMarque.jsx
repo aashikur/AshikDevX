@@ -210,8 +210,7 @@ export default function AboutMarque() {
                     <img className=" opacity-0" src="/assets/images/grid-1.jpg" alt="" />
 
 
-                    <img className="absolute 
-                      shadow-2xl shadow-sky-200/50
+                    <img className="absolute shadow-2xl shadow-sky-200/50
                              top-15  left-1/2 -translate-x-1/2 group-hover:translate-40 group-hover:scale-50 w-8/12 rounded-xl  
                             transition-all duration-300 ease-[cubic-bezier(0.34,1.56,0.64,1)]" src="/assets/images/grid-1.jpg" alt="" />
                     <img className="absolute
