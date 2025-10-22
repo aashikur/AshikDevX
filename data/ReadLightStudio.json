@@ -1,0 +1,238 @@
+{
+  "header": {
+    "title": "redlab studio",
+    "subtitle": "powered by Voice of Dhaka",
+    "navLinks": [
+      {
+        "text": "Features",
+        "href": "#features"
+      },
+      {
+        "text": "About",
+        "href": "#about"
+      },
+      {
+        "text": "Batch One",
+        "href": "#batch-one"
+      },
+      {
+        "text": "Shop",
+        "href": "#shop"
+      },
+      {
+        "text": "Pricing",
+        "href": "#pricing"
+      }
+    ],
+    "cta": {
+      "text": "Enroll Now",
+      "href": "#pricing"
+    }
+  },
+  "hero": {
+    "headlineLines": [
+      "Become a Pro",
+      "Video Editor."
+    ],
+    "description": "Our comprehensive course provides everything you need to master the art of video editing, from fundamentals to advanced VFX.",
+    "cta": {
+      "text": "Get Started",
+      "href": "#pricing"
+    }
+  },
+  "features": {
+    "title": "Everything You'll Master",
+    "description": "A complete curriculum designed for today's creative industry.",
+    "items": [
+      {
+        "icon": "film",
+        "title": "Editing Fundamentals",
+        "description": "Master the timeline, cuts, transitions, and the core principles of storytelling."
+      },
+      {
+        "icon": "palette",
+        "title": "Color Grading",
+        "description": "Learn to set the mood, fix exposure, and create stunning cinematic color grades."
+      },
+      {
+        "icon": "music-4",
+        "title": "Audio Engineering",
+        "description": "Mix audio, remove noise, and add sound effects for professional-quality sound."
+      },
+      {
+        "icon": "wand-2",
+        "title": "Motion Graphics",
+        "description": "Create beautiful titles, simple animations, and basic visual effects to elevate your videos."
+      }
+    ]
+  },
+  "about": {
+    "title": "Learn from the best in the industry.",
+    "description": "We are a community of creators dedicated to helping you succeed in the competitive world of video production.",
+    "keyPoints": [
+      {
+        "icon": "award",
+        "title": "Expert Instructors",
+        "description": "Learn from industry veterans with years of real-world experience."
+      },
+      {
+        "icon": "video",
+        "title": "Hands-On Projects",
+        "description": "Apply what you learn with project files and real footage to build your portfolio."
+      },
+      {
+        "icon": "users",
+        "title": "Creative Community",
+        "description": "Join our private community to get feedback, network, and collaborate."
+      }
+    ],
+    "visualText": "redlab"
+  },
+  "videoPreview": {
+    "title": "From Our Channel",
+    "description": "See the kind of high-quality content you'll be able to create.",
+    "youtubeEmbedUrl": "https://www.youtube.com/embed/Sc6_3-O8_i0?si=Lp4lF9sXqB7JkG-y"
+  },
+  "batchOneModules": {
+    "title": "Batch One",
+    "subtitle": "Starting from January 1st, 2026.",
+    "modules": [
+      {
+        "title": "Foundation",
+        "description": "Premiere Pro Interface & Project Setup, Organizing Media, Timeline Basics, Editing Tools & Shortcuts, Proxies, Frame Rates, Keyframes, Masking, Time Ramping, and Green Screen."
+      },
+      {
+        "title": "Bridge",
+        "description": "Fundamentals of Storytelling, Script Writing, Content Ideas, Voice Over Techniques, and Building On-Camera Confidence."
+      },
+      {
+        "title": "Ground",
+        "description": "After Effects Interface, Compositions, Dynamic Linking with Premiere Pro, Shape Layers, Keyframe Graph Editor, Kinetic Typography & Text Animation."
+      },
+      {
+        "title": "Momentum",
+        "description": "Classic 3D (Cameras, Lights, Layers), Roto Brush & Puppet Tools for simple animation, Camera & Motion Tracking, and an Introduction to Expressions."
+      },
+      {
+        "title": "Catalyst",
+        "description": "Geo Layers for Map Animations, Creating Vox-style Map Graphics, and applying Cinematic Motion to PNG Maps."
+      },
+      {
+        "title": "Forge",
+        "description": "Advanced 3D Camera Techniques, Mastering 3D Models & Lighting, and an Introduction to AI in Video Creation with Veo 3."
+      },
+      {
+        "title": "Summit",
+        "description": "Promotional Video Editing, A-roll/Facecam Editing, and deconstructing styles like Magnetsmedia & Iman Gadzhi."
+      },
+      {
+        "title": "Core",
+        "description": "Sourcing Music & SFX, Audio Ducking & Sound Theory, and an exploration of Advanced Color Theory."
+      },
+      {
+        "title": "Blueprint",
+        "description": "Finding Your Niche, Content Research, YouTube Algorithm & SEO, Thumbnail Design, Camera Control, and Production Planning."
+      }
+    ]
+  },
+  "shop": {
+    "title": "Get The Gear",
+    "description": "Official merchandise from redlab studio. High-quality apparel for creators.",
+    "products": [
+      {
+        "imageUrl": "https://placehold.co/600x600/f5f5f7/b91c1c?text=Classic+Tee",
+        "title": "redlab Classic Tee",
+        "price": "600 Tk",
+        "cta": {
+          "text": "View Product",
+          "href": "#"
+        }
+      },
+      {
+        "imageUrl": "https://placehold.co/600x600/1d1d1f/ffffff?text=Creator+Tee",
+        "title": "Creator Tee",
+        "price": "600 Tk",
+        "cta": {
+          "text": "View Product",
+          "href": "#"
+        }
+      },
+      {
+        "imageUrl": "https://placehold.co/600x600/ffffff/b91c1c?text=VOD+Tee",
+        "title": "VOD Collab Tee",
+        "price": "600 Tk",
+        "cta": {
+          "text": "View Product",
+          "href": "#"
+        }
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Simple, All-Access Pricing",
+    "plan": {
+      "name": "Complete Course Bundle",
+      "price": "7999 Tk",
+      "term": "One-time payment. Lifetime access.",
+      "cta": {
+        "text": "Enroll & Start Learning",
+        "href": "#"
+      },
+      "features": [
+        "30+ hours of Live video lessons",
+        "Downloadable project files & assets",
+        "Lifetime access to all modules",
+        "Access to private student community",
+        "Direct feedback from instructors"
+      ]
+    }
+  },
+  "feedback": {
+    "title": "What Our Students Say",
+    "description": "Real stories from creators who leveled up their skills with us.",
+    "testimonials": [
+      {
+        "quote": "The best investment I've made for my YouTube channel. The instructors are industry pros and the hands-on projects made all the difference. My editing speed and quality have skyrocketed.",
+        "author": {
+          "name": "Alex Rivera",
+          "role": "YouTuber",
+          "avatarUrl": "https://placehold.co/48x48/e0e0e0/333?text=AR"
+        }
+      },
+      {
+        "quote": "I went from knowing absolutely nothing to confidently editing promotional videos for clients. The course structure is logical, and the community is incredibly supportive.",
+        "author": {
+          "name": "Jessica Smith",
+          "role": "Freelance Videographer",
+          "avatarUrl": "https://placehold.co/48x48/e0e0e0/333?text=JS"
+        }
+      },
+      {
+        "quote": "The motion graphics and After Effects modules were a game-changer. I can now add that extra layer of polish to my videos that really makes them stand out from the crowd.",
+        "author": {
+          "name": "David Chen",
+          "role": "Content Creator",
+          "avatarUrl": "https://placehold.co/48x48/e0e0e0/333?text=DC"
+        }
+      }
+    ]
+  },
+  "footer": {
+    "socialLinks": [
+      {
+        "platform": "twitter",
+        "href": "#"
+      },
+      {
+        "platform": "instagram",
+        "href": "#"
+      },
+      {
+        "platform": "youtube",
+        "href": "#"
+      }
+    ],
+    "copyright": "© 2025 redlab studio. All Rights Reserved.",
+    "credit": "powered by Voice of Dhaka"
+  }
+}
