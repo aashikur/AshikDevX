@@ -3,6 +3,10 @@ import RootLayout from "../layouts/RootLayout";
 import Home from "../pages/frontend/Home/Home";
 import About from "@/pages/frontend/About/About";
 import Error from "@/pages/Error";
+import ContactPage from "@/pages/contact/ContactPage";
+import ServicesSection from "@/pages/frontend/Home/sections/ServicesSection";
+import PricingSection from "@/pages/frontend/Home/sections/PricingSection2";
+import CTAGetInTouch from "@/pages/frontend/Home/sections/CTAGetInTouch";
 
 
 const mainRoutes = createBrowserRouter([
@@ -21,12 +25,21 @@ const mainRoutes = createBrowserRouter([
       },
       {
         path: "/projects",
-        element: <div>Projects</div>,
+        element:         <div className='min-h-svh flex items-center flex-col justify-center'>
+            <div className='min-h-svh flex items-center flex-col justify-center'>
+                <></>
+            </div>
+        </div>,
       },
     
       {
         path: "/services",
-        element: <div>Services</div>,
+        element:        <div className='min-h-svh flex items-center flex-col justify-center'>
+            <div className='min-h-svh flex items-center flex-col justify-center'>
+                <ServicesSection></ServicesSection>
+                <PricingSection></PricingSection>
+            </div>
+        </div>,
       },
       {
         path: "/skills",
@@ -34,7 +47,7 @@ const mainRoutes = createBrowserRouter([
       },
       {
         path: "/contact",
-        element: <div>Contact</div>,
+        element: <ContactPage/>,
       },
       
     ],
