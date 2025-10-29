@@ -8,6 +8,7 @@ import ServicesSection from "@/pages/frontend/Home/sections/ServicesSection";
 import PricingSection from "@/pages/frontend/Home/sections/PricingSection2";
 import CTAGetInTouch from "@/pages/frontend/Home/sections/CTAGetInTouch";
 import FeaturedProjects from "@/pages/frontend/Home/sections/FeaturedProjects";
+import Reviews from "@/pages/frontend/Home/sections/Reviews";
 
 
 const mainRoutes = createBrowserRouter([
@@ -49,6 +50,15 @@ const mainRoutes = createBrowserRouter([
       {
         path: "/contact",
         element: <ContactPage />,
+      },
+      {
+        path: "/reviews",
+        element:  <div className='min-h-svh flex items-center flex-col justify-center'>
+          <div className='min-h-svh flex items-center flex-col justify-center'>
+           <Reviews></Reviews>
+            <ServicesSection></ServicesSection>
+          </div>
+        </div>,
       },
 
     ],
