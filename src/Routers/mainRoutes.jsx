@@ -7,6 +7,7 @@ import ContactPage from "@/pages/contact/ContactPage";
 import ServicesSection from "@/pages/frontend/Home/sections/ServicesSection";
 import PricingSection from "@/pages/frontend/Home/sections/PricingSection2";
 import CTAGetInTouch from "@/pages/frontend/Home/sections/CTAGetInTouch";
+import FeaturedProjects from "@/pages/frontend/Home/sections/FeaturedProjects";
 
 
 const mainRoutes = createBrowserRouter([
@@ -25,20 +26,20 @@ const mainRoutes = createBrowserRouter([
       },
       {
         path: "/projects",
-        element:         <div className='min-h-svh flex items-center flex-col justify-center'>
-            <div className='min-h-svh flex items-center flex-col justify-center'>
-                <></>
-            </div>
+        element: <div className='min-h-svh flex items-center flex-col justify-center'>
+          <div className='min-h-svh flex items-center flex-col justify-center'>
+            <FeaturedProjects></FeaturedProjects>
+          </div>
         </div>,
       },
-    
+
       {
         path: "/services",
-        element:        <div className='min-h-svh flex items-center flex-col justify-center'>
-            <div className='min-h-svh flex items-center flex-col justify-center'>
-                <ServicesSection></ServicesSection>
-                <PricingSection></PricingSection>
-            </div>
+        element: <div className='min-h-svh flex items-center flex-col justify-center'>
+          <div className='min-h-svh flex items-center flex-col justify-center'>
+            <ServicesSection></ServicesSection>
+            <PricingSection></PricingSection>
+          </div>
         </div>,
       },
       {
@@ -47,9 +48,9 @@ const mainRoutes = createBrowserRouter([
       },
       {
         path: "/contact",
-        element: <ContactPage/>,
+        element: <ContactPage />,
       },
-      
+
     ],
   },
 ]);
