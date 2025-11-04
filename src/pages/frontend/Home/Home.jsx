@@ -15,14 +15,13 @@ import ServicesSection from './sections/ServicesSection';
 import ProcessSection from './sections/ProcessSection';
 import BackgroundGrid from '@/components/ui/BackgroundGrid';
 import BackgroundGrid2 from '@/components/ui/BackgroundGrid2';
+import ScrollToTop from '@/components/ui/ScrollToTop';
 
 const Home = () => {
+
   return (
     <div
-    
     >
-
-
       <HeroSection />
       <AboutMeSection></AboutMeSection>
       <ServicesSection></ServicesSection>
@@ -32,10 +31,7 @@ const Home = () => {
       <JoinWhatsappCTA></JoinWhatsappCTA>
       <TechStack />
       <Reviews></Reviews>
-      <CTAGetInTouch></CTAGetInTouch>
-
-
-
+      <CTAGetInTouch></CTAGetInTouch> 
     </div>
   );
 };
